@@ -34,11 +34,11 @@ textlint --rule preset-google-developer README.md
 -   Introduction-   [About this guide](https://developers.google.com/style/)-   [Style-guide highlights](https://developers.google.com/style/highlights)-   General principles
 -   [Style and tone](https://developers.google.com/style/tone)
    - [ ] Some things to avoid where possible
-    - [ ] Placeholder phrases like "please note" and "at this time."
-    - [ ] Starting all sentences with the same phrase (such as "You can" or "Todo").
-    - [ ] Phrasing in terms of "let's" do something.
-    - [ ] Using phrases like "simply" or "It's that simple" or "It's easy" in a
-    - [ ] procedure, unless it's an extraordinarily simple/easy procedure.
+     - [ ] Placeholder phrases like "please note" and "at this time."
+     - [ ] Starting all sentences with the same phrase (such as "You can" or "Todo").
+     - [ ] Phrasing in terms of "let's" do something.
+     - [ ] Using phrases like "simply" or "It's that simple" or "It's easy" in a
+     - [ ] procedure, unless it's an extraordinarily simple/easy procedure.
    - [ ] [Politeness and use of "please"](https://developers.google.com/style/tone#politeness-and-use-of-please "Politeness and use of &#34;please&#34;")
 -   [Documenting future features](https://developers.google.com/style/future)
 -   [Accessible content](https://developers.google.com/style/accessibility)
