@@ -1,0 +1,37 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "textlint-rule-preset-google-developer",
+  "version": "1.0.0",
+  "description": "     Google Developer Documentation Style Guide ",
+  "main": "lib/textlint-rule-preset-google-developer.js",
+  "scripts": {
+    "test": "textlint-scripts test",
+    "prepublish": "npm run --if-present build",
+    "build": "textlint-scripts build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "keywords": [
+    "textlintrule"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/textlint-rule/textlint-rule-preset-google-developer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/textlint-rule/textlint-rule-preset-google-developer/issues"
+  },
+  "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google-developer",
+  "devDependencies": {
+    "textlint-scripts": "^1.2.4"
+  }
+}
