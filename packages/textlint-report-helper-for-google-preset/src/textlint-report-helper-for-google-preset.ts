@@ -11,13 +11,12 @@ const parser = new EnglishParser();
 // Additional lexicon
 const lexicon = require("en-lexicon");
 lexicon.extend({
-    browser: "NN",
+    browser: "NN"
 });
 export const getPosFromSingleWord = (word: string): string => {
     const tags = new Tag([word])
         .initial() // initial dictionary and pattern based tagging
-        .smooth() // further context based smoothing
-        .tags;
+        .smooth().tags; // further context based smoothing
     return tags[0];
 };
 
@@ -38,17 +37,15 @@ export const getPos = (text: string, word: string): string => {
 };
 
 export interface StrReporterArgs {
-    node: any,
-    dictionaries: TestMatchReplaceReturnDict[],
-    report: (node: any, message: any) => void,
-    RuleError: any,
-    fixer: any,
-    getSource: any
+    node: any;
+    dictionaries: TestMatchReplaceReturnDict[];
+    report: (node: any, message: any) => void;
+    RuleError: any;
+    fixer: any;
+    getSource: any;
 }
 
-export const strReporter = ({
-                                node, dictionaries, report, RuleError, fixer, getSource
-                            }: StrReporterArgs) => {
+export const strReporter = ({ node, dictionaries, report, RuleError, fixer, getSource }: StrReporterArgs) => {
     const text = getSource(node);
     dictionaries.forEach(dict => {
         const matchTestReplaceReturn = matchTestReplace(text, dict);
@@ -59,26 +56,26 @@ export const strReporter = ({
             const index = result.index;
             const endIndex = result.index + result.match.length;
             const range = [index, endIndex];
-            report(node, new RuleError(result.message, {
-                index,
-                fix: fixer.replaceTextRange(range, result.replace)
-            }));
+            report(
+                node,
+                new RuleError(result.message, {
+                    index,
+                    fix: fixer.replaceTextRange(range, result.replace)
+                })
+            );
         });
-
     });
 };
 
 export interface ParagraphReporterArgs {
-    node: any,
-    dictionaries: TestMatchReplaceReturnDict[],
-    report: (node: any, message: any) => void,
-    RuleError: any,
-    fixer: any
+    node: any;
+    dictionaries: TestMatchReplaceReturnDict[];
+    report: (node: any, message: any) => void;
+    RuleError: any;
+    fixer: any;
 }
 
-export const paragraphReporter = ({
-                                      node, dictionaries, report, RuleError, fixer
-                                  }: ParagraphReporterArgs) => {
+export const paragraphReporter = ({ node, dictionaries, report, RuleError, fixer }: ParagraphReporterArgs) => {
     const source = new StringSource(node);
     const text = source.toString();
     dictionaries.forEach(dict => {
@@ -90,10 +87,13 @@ export const paragraphReporter = ({
             const index = source.originalIndexFromIndex(result.index);
             const endIndex = source.originalIndexFromIndex(result.index + result.match.length);
             const range = [index, endIndex];
-            report(node, new RuleError(result.message, {
-                index,
-                fix: fixer.replaceTextRange(range, result.replace)
-            }));
+            report(
+                node,
+                new RuleError(result.message, {
+                    index,
+                    fix: fixer.replaceTextRange(range, result.replace)
+                })
+            );
         });
     });
 };

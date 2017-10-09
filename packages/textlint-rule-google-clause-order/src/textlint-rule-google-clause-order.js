@@ -3,8 +3,9 @@
 import { paragraphReporter, getPos } from "textlint-report-helper-for-google-preset";
 
 // https://developers.google.com/style/clause-order
-export const defaultMessage = "Put conditional clauses before instructions, not after.\n"
-    + "URL: https://developers.google.com/style/clause-order";
+export const defaultMessage =
+    "Put conditional clauses before instructions, not after.\n" +
+    "URL: https://developers.google.com/style/clause-order";
 const report = context => {
     const dictionaries = [
         {
@@ -17,10 +18,10 @@ const report = context => {
         {
             pattern: /Click ([\w-]+) if you want to (.+)./,
             replace: ({ captures }) => {
-                return `To ${captures[1]}, click ${captures[0]}.`
+                return `To ${captures[1]}, click ${captures[0]}.`;
             },
             replaceTest: ({ all, captures }) => {
-                return /^VB/.test(getPos(all, captures[0]))
+                return /^VB/.test(getPos(all, captures[0]));
             },
             message: () => defaultMessage
         }
@@ -30,7 +31,11 @@ const report = context => {
     return {
         [Syntax.Paragraph](node) {
             paragraphReporter({
-                node, dictionaries, report, RuleError, fixer
+                node,
+                dictionaries,
+                report,
+                RuleError,
+                fixer
             });
         }
     };
