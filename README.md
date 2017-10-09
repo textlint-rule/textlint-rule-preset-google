@@ -46,7 +46,8 @@ textlint --rule preset-google-developer README.md
 - [Documenting future features](https://developers.google.com/style/future)
 - [Accessible content](https://developers.google.com/style/accessibility)
 - [Writing for a global audience](https://developers.google.com/style/translation)
-    - [ ] Avoid misplaced modifiers.
+    - :heavy_check_mark: `textlint-rule-google-contractions`
+    - [x] Avoid misplaced modifiers.
 - Language and grammar
 - [Abbreviations](https://developers.google.com/style/abbreviations)
     - [x] [textlint-rule-abbr-within-parentheses](https://github.com/azu/textlint-rule-abbr-within-parentheses "textlint-rule-abbr-within-parentheses")

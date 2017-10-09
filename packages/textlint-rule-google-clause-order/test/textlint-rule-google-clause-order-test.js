@@ -9,7 +9,7 @@ tester.run("textlint-rule-google-clause-order", rule, {
         "To get the user's phone number, call `user.phoneNumber.get()`.",
         "To clean up, call the `collectGarbage()` method.",
         "For more information, see [link to other document].",
-        "To delete the entire document, click Delete.",
+        "To delete the entire document, click Delete."
     ],
     invalid: [
         {
@@ -20,7 +20,7 @@ tester.run("textlint-rule-google-clause-order", rule, {
                     message: defaultMessage,
                     index: 0
                 }
-            ],
+            ]
         },
 
         {
@@ -31,7 +31,7 @@ tester.run("textlint-rule-google-clause-order", rule, {
                     message: defaultMessage,
                     index: 0
                 }
-            ],
+            ]
         },
         {
             text: "Click Delete if you want to delete the entire document.",
@@ -41,8 +41,7 @@ tester.run("textlint-rule-google-clause-order", rule, {
                     message: defaultMessage,
                     index: 0
                 }
-            ],
+            ]
         }
-
     ]
 });
