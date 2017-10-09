@@ -8,7 +8,7 @@ export const defaultMessage = "Put conditional clauses before instructions, not 
 const report = context => {
     const dictionaries = [
         {
-            pattern: /See (.*) for more (information|details)./,
+            pattern: /See (.*) for more (information|details|detail)./,
             replace: ({ captures }) => {
                 return `For more ${captures[1]}, see ${captures[0]}.`;
             },
