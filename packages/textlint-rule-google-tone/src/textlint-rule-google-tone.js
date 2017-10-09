@@ -1,31 +1,11 @@
 // MIT © 2017 azu
 "use strict";
-import { matchTestReplace } from "match-test-replace";
-import { EnglishParser } from "nlcst-parse-english";
+import { paragraphReporter, getTag } from "textlint-report-helper-for-google-preset";
 
-const toString = require("nlcst-to-string");
-
-const findUnistNode = require("unist-util-find");
-const parser = new EnglishParser();
-const getTag = (text, word) => {
-    const CST = parser.parse(text);
-    const node = findUnistNode(CST, node => {
-        if (node.type === "WordNode") {
-            return toString(node) === word;
-        }
-        return false;
-    });
-    if (!node) {
-        return "";
-    } else if (node.data && node.data.pos) {
-        return node.data.pos;
-    }
-    return "";
-};
 const report = context => {
     // Politeness and use of "please"
     // https://developers.google.com/style/tone#politeness-and-use-of-please
-    const noPleaseVerb = [
+    const dictionaries = [
         {
             pattern: /To (\w+) (.*), please (\w+)/,
             replaceTest: ({ all, captures }) => {
@@ -50,21 +30,11 @@ const report = context => {
         }
     ];
 
-    const { Syntax, RuleError, fixer, report, getSource } = context;
+    const { Syntax, RuleError, fixer, report } = context;
     return {
-        [Syntax.Str](node) {
-            const text = getSource(node);
-            noPleaseVerb.forEach(dict => {
-                const matchTestReplaceReturn = matchTestReplace(text, dict);
-                matchTestReplaceReturn.results.forEach(result => {
-                    const index = result.index;
-                    const range = [index, index + result.match.length];
-                    report(node, new RuleError(result.message, {
-                        index,
-                        fix: fixer.replaceTextRange(range, result.replace)
-                    }));
-                });
-
+        [Syntax.Paragraph](node) {
+            paragraphReporter({
+                node, dictionaries, report, RuleError, fixer
             });
         }
     };
