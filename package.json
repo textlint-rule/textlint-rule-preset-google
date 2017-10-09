@@ -1,24 +1,18 @@
 {
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
+  "private": true,
   "author": "azu",
   "license": "MIT",
-  "files": [
-    "bin/",
-    "lib/",
-    "src/"
-  ],
-  "name": "textlint-rule-preset-google-developer",
+  "name": "textlint-rule-preset-google",
   "version": "1.0.0",
-  "description": "     Google Developer Documentation Style Guide ",
-  "main": "lib/textlint-rule-preset-google-developer.js",
+  "description": "Google Developer Documentation Style Guide.",
   "scripts": {
-    "test": "textlint-scripts test",
-    "prepublish": "npm run --if-present build",
-    "build": "textlint-scripts build",
-    "watch": "textlint-scripts build --watch"
+    "prepare": "lerna bootstrap",
+    "publish": "lerna publish",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
+    "precommit": "lint-staged",
+    "postcommit": "git reset"
   },
   "keywords": [
     "textlintrule"
@@ -32,6 +26,20 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google-developer",
   "devDependencies": {
-    "textlint-scripts": "^1.2.4"
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "lerna": "^2.4.0",
+    "mocha": "^4.0.1",
+    "prettier": "^1.7.4"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
