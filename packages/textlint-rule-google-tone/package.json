@@ -47,9 +47,6 @@
     ]
   },
   "dependencies": {
-    "match-test-replace": "^1.0.1",
-    "nlcst-parse-english": "^1.1.1",
-    "nlcst-to-string": "^2.0.1",
-    "unist-util-find": "^1.0.1"
+    "textlint-report-helper-for-google-preset": "^1.0.0"
   }
 }
