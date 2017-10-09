@@ -1,6 +1,6 @@
 # textlint-rule-google-contractions
 
-https://developers.google.com/style/contractions
+For more information, see [Writing for a global audience  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/translation "Writing for a global audience  |  Google Developer Documentation Style Guide  |  Google Developers").
 
 ## Install
 
