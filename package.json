@@ -6,6 +6,7 @@
   "version": "1.0.0",
   "description": "Google Developer Documentation Style Guide ",
   "scripts": {
+    "prepare": "larna bootstrap",
     "publish": "lerna publish",
     "test": "lerna run test",
     "prepublish": "npm run --if-present build",
