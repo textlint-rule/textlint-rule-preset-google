@@ -6,7 +6,11 @@ const rule = require("../src/textlint-rule-google-tone");
 const message = `using "please" in a set of instructions is overdoing the politeness.\n
         URL: https://developers.google.com/style/tone#politeness-and-use-of-please`;
 tester.run("textlint-rule-google-tone", rule, {
-    valid: ["To view the document, click View."],
+    valid: [
+        "To view the document, click View.",
+        "To get the user's phone number, call `user.phoneNumber.get()`.",
+        "To clean up, call the `collectGarbage()` method.",
+    ],
     invalid: [
         {
             text: "To view the document, please click View.",
