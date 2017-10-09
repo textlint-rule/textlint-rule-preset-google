@@ -3,7 +3,7 @@ const tester = new TextLintTester();
 // rule
 const rule = require("../src/textlint-rule-google-clause-order");
 const defaultMessage = require("../src/textlint-rule-google-clause-order").defaultMessage;
-tester.run("textlint-rule-google-tone", rule, {
+tester.run("textlint-rule-google-clause-order", rule, {
     valid: [
         "Say you want to tell the audience to do something in a particular circumstance. If possible, mention the circumstance before you provide the instruction; that way, the reader can skip the instruction if the circumstance doesn't apply.",
         "To get the user's phone number, call `user.phoneNumber.get()`.",
