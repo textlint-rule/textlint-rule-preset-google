@@ -42,7 +42,7 @@ textlint --rule preset-google-developer README.md
      - [ ] Using phrases like "simply" or "It's that simple" or "It's easy" in a
      - [ ] procedure, unless it's an extraordinarily simple/easy procedure.
    - [x] [Politeness and use of "please"](https://developers.google.com/style/tone#politeness-and-use-of-please "Politeness and use of &#34;please&#34;")
-     - `textlint-rule-google-tone`
+     - :heavy_check_mark: `textlint-rule-google-tone`
 - [Documenting future features](https://developers.google.com/style/future)
 - [Accessible content](https://developers.google.com/style/accessibility)
 - [Writing for a global audience](https://developers.google.com/style/translation)
@@ -61,8 +61,9 @@ textlint --rule preset-google-developer README.md
 - [Capitalization](https://developers.google.com/style/capitalization)
     - [ ] [Purdue OWL: Capital Letters](https://owl.english.purdue.edu/owl/resource/592/01/ "Purdue OWL: Capital Letters")
 - [Clause order](https://developers.google.com/style/clause-order)
-    - [ ] For more details
-    - [ ] To ~, instruction
+    - :heavy_check_mark: `textlint-rule-google-clause-order`
+    - [x] For more details
+    - [x] To ~, instruction
 - [Contractions](https://developers.google.com/style/contractions)
     - [ ] Don't use double contractions
 - [Cross-references](https://developers.google.com/style/cross-references)
