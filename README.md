@@ -1,4 +1,4 @@
-# textlint-rule-preset-google-developer
+# textlint-rule-preset-google-developer [![Build Status](https://travis-ci.org/textlint-rule/textlint-rule-preset-google.svg?branch=master)](https://travis-ci.org/textlint-rule/textlint-rule-preset-google)
 
 Google Developer Documentation Style Guide 
 
