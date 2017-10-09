@@ -1,6 +1,6 @@
 // MIT © 2017 azu
 "use strict";
-import { paragraphReporter, getTag } from "textlint-report-helper-for-google-preset";
+import { paragraphReporter, getPos } from "textlint-report-helper-for-google-preset";
 
 const report = context => {
     // Politeness and use of "please"
@@ -9,7 +9,7 @@ const report = context => {
         {
             pattern: /To (\w+) (.*), please (\w+)/,
             replaceTest: ({ all, captures }) => {
-                return /^VB/.test(getTag(all, captures[0])) && /^VB|NN/.test(getTag(all, captures[2]));
+                return /^VB/.test(getPos(all, captures[0])) && /^VB|NN/.test(getPos(all, captures[2]));
             },
             replace: ({ captures }) => {
                 return `To ${captures[0]} ${captures[1]}, ${captures[2]}`;
@@ -20,7 +20,7 @@ const report = context => {
         {
             pattern: /(For more \w+), please (\w+)/,
             replaceTest: ({ all, captures }) => {
-                return /^VB/.test(getTag(all, captures[1]));
+                return /^VB/.test(getPos(all, captures[1]));
             },
             replace: ({ captures }) => {
                 return `${captures[0]}, ${captures[1]}`;

@@ -1,6 +1,6 @@
 // MIT © 2017 azu
 "use strict";
-import { paragraphReporter, getTag } from "textlint-report-helper-for-google-preset";
+import { paragraphReporter, getPos } from "textlint-report-helper-for-google-preset";
 
 // https://developers.google.com/style/clause-order
 export const defaultMessage = "Put conditional clauses before instructions, not after.\n"
@@ -20,7 +20,7 @@ const report = context => {
                 return `To ${captures[1]}, click ${captures[0]}.`
             },
             replaceTest: ({ all, captures }) => {
-                return /^VB/.test(getTag(all, captures[0]))
+                return /^VB/.test(getPos(all, captures[0]))
             },
             message: () => defaultMessage
         }
