@@ -1,6 +1,6 @@
 # textlint-rule-google-word-list
 
-See https://developers.google.com/style/word-list
+For more details, see [Word list  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/word-list "Word list  |  Google Developer Documentation Style Guide  |  Google Developers")
 
 ## Install
 
