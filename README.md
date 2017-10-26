@@ -80,7 +80,8 @@ textlint --rule preset-google-developer README.md
 - [Spelling](https://developers.google.com/style/spelling)
 - [Verb forms in reference documentation](https://developers.google.com/style/reference-verbs)
 - [Word list](https://developers.google.com/style/word-list)
-    - [ ] Word list
+    - :heavy_check_mark: `textlint-rule-google-word-list`
+    - [x] Word list
 - Punctuation
 - [Apostrophes (possessives)](https://developers.google.com/style/possessives)
     - [ ] incorrect possessives
