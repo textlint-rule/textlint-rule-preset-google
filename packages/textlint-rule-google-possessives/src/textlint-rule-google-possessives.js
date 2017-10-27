@@ -2,7 +2,7 @@
 "use strict";
 import { paragraphReporter, getPosFromSingleWord } from "textlint-report-helper-for-google-preset";
 
-export const defaultMessage = `In general, to form a possessive of a singular noun (regardless of whether it ends in s) or a plural noun that doesn't end in s, add 's to the end of the word. For a plural noun that does end in s, add an apostrophe but no additional s.`;
+const DocumentURL = "https://developers.google.com/style/possessives";
 const report = context => {
     const { Syntax, RuleError, fixer, report } = context;
     const dictionaries = [
@@ -11,13 +11,16 @@ const report = context => {
             pattern: /(\w+)'s/,
             replaceTest: ({ captures }) => {
                 const word = captures[0];
-                // ignore irregular plural Word
+                // if plural word is ended in "s", ignore it.
                 const isEndedS = word[word.length - 1] === "s";
                 const wordPos = getPosFromSingleWord(word);
                 // Plural word
                 return wordPos === "NNS" && isEndedS;
             },
-            message: () => defaultMessage
+            message: () =>
+                'A plural noun that does end in "s", add an apostrophe(\') but no additional "s" or use "of"' +
+                "\n" +
+                DocumentURL
         },
         // NG: singular noun + '
         {
@@ -30,10 +33,10 @@ const report = context => {
                 const targetWord = words[words.length - 1];
                 // if "the word's", ignore this
                 if (determinerWord !== undefined) {
-                    const deteminerType = getPosFromSingleWord(determinerWord);
-                    console.log(deteminerType);
+                    const determinerType = getPosFromSingleWord(determinerWord);
+                    console.log(determinerType);
                     // skip: the a
-                    if (deteminerType === "DT") {
+                    if (determinerType === "DT") {
                         return false;
                     }
                 }
@@ -41,13 +44,16 @@ const report = context => {
                 // singular noun(singular noun or Proper noun)
                 return wordPos === "NNP" || wordPos === "NN";
             },
-            message: () => defaultMessage
+            message: () =>
+                'To form a possessive of a singular noun (regardless of whether it ends in s) or a plural noun that doesn\'t end in "s", add "\'s" to the end of the word' +
+                "\n" +
+                DocumentURL
         }
     ];
 
     return {
         [Syntax.Paragraph](node) {
-            paragraphReporter({
+            return paragraphReporter({
                 node,
                 dictionaries,
                 report,

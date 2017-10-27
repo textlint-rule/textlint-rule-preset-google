@@ -33,9 +33,6 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-possessives/",
   "dependencies": {
-    "irregular-plurals": "^1.4.0",
-    "object.values": "^1.0.4",
-    "pluralize": "^7.0.0",
     "textlint-report-helper-for-google-preset": "^1.0.0"
   },
   "devDependencies": {

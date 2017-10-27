@@ -28,8 +28,7 @@ tester.run("rule", rule, {
             text: "businesses's",
             errors: [
                 {
-                    index: 0,
-                    message: defaultMessage
+                    index: 0
                 }
             ]
         },
@@ -37,8 +36,7 @@ tester.run("rule", rule, {
             text: "Buzz'",
             errors: [
                 {
-                    index: 0,
-                    message: defaultMessage
+                    index: 0
                 }
             ]
         },

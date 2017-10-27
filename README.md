@@ -84,7 +84,8 @@ textlint --rule preset-google-developer README.md
     - [x] Word list
 - Punctuation
 - [Apostrophes (possessives)](https://developers.google.com/style/possessives)
-    - [ ] incorrect possessives
+    - :heavy_check_mark: `textlint-rule-google-possessives`
+    - [x] incorrect possessives
 - [Colons](https://developers.google.com/style/colons)
 - [Commas](https://developers.google.com/style/commas)
 - [Dashes](https://developers.google.com/style/dashes)
