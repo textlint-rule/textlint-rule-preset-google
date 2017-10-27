@@ -2,10 +2,6 @@
 "use strict";
 import { paragraphReporter, getPosFromSingleWord } from "textlint-report-helper-for-google-preset";
 
-const values = require("object.values");
-
-const irregularPlurals = require("irregular-plurals");
-const irregularPluralValues = values(irregularPlurals);
 export const defaultMessage = `In general, to form a possessive of a singular noun (regardless of whether it ends in s) or a plural noun that doesn't end in s, add 's to the end of the word. For a plural noun that does end in s, add an apostrophe but no additional s.`;
 const report = context => {
     const { Syntax, RuleError, fixer, report } = context;
@@ -16,12 +12,10 @@ const report = context => {
             replaceTest: ({ captures }) => {
                 const word = captures[0];
                 // ignore irregular plural Word
-                if (irregularPluralValues.includes(word)) {
-                    return false;
-                }
+                const isEndedS = word[word.length - 1] === "s";
                 const wordPos = getPosFromSingleWord(word);
                 // Plural word
-                return wordPos === "NNS";
+                return wordPos === "NNS" && isEndedS;
             },
             message: () => defaultMessage
         },
