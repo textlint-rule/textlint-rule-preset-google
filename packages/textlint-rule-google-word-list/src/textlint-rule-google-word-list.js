@@ -12,7 +12,7 @@ const report = context => {
         },
         {
             word: "access",
-            replaceTest: ({ all }) => {
+            test: ({ all }) => {
                 return /^VB/.test(getPosFromSingleWord(all)); // Verb
             },
             message:
@@ -81,7 +81,7 @@ const report = context => {
         },
         {
             word: /check (.*)/,
-            replaceTest: ({ all }) => {
+            test: ({ all }) => {
                 return /checkbox/i.test(all);
             },
             replace: ({ captures }) => `select ${captures[0]}`,
@@ -232,7 +232,7 @@ const report = context => {
         },
         {
             word: /touch (.*?)/,
-            replaceTest: ({ all }) => {
+            test: ({ all }) => {
                 if (/touch & hold/.test(all)) {
                     return false;
                 }
@@ -272,7 +272,7 @@ const report = context => {
     ].map(preDict => {
         return {
             pattern: typeof preDict.word === "string" ? new RegExp("\\b" + preDict.word + "\\b") : preDict.word,
-            replaceTest: preDict.replaceTest ? preDict.replaceTest : undefined,
+            test: preDict.test ? preDict.test : undefined,
             replace: preDict.replace ? preDict.replace : undefined,
             message: () => preDict.message
         };

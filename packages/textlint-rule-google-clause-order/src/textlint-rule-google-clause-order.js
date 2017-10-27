@@ -20,7 +20,7 @@ const report = context => {
             replace: ({ captures }) => {
                 return `To ${captures[1]}, click ${captures[0]}.`;
             },
-            replaceTest: ({ all, captures }) => {
+            test: ({ all, captures }) => {
                 return /^VB/.test(getPos(all, captures[0]));
             },
             message: () => defaultMessage

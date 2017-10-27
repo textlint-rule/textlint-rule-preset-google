@@ -8,7 +8,7 @@ const report = context => {
     const dictionaries = [
         {
             pattern: /To (\w+) (.*), please (\w+)/,
-            replaceTest: ({ all, captures }) => {
+            test: ({ all, captures }) => {
                 return /^VB/.test(getPos(all, captures[0])) && /^VB|NN/.test(getPos(all, captures[2]));
             },
             replace: ({ captures }) => {
@@ -19,7 +19,7 @@ const report = context => {
         },
         {
             pattern: /(For more \w+), please (\w+)/,
-            replaceTest: ({ all, captures }) => {
+            test: ({ all, captures }) => {
                 return /^VB/.test(getPos(all, captures[1]));
             },
             replace: ({ captures }) => {

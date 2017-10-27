@@ -9,7 +9,7 @@ const report = context => {
         // NG: plural word + 's
         {
             pattern: /(\w+)'s/,
-            replaceTest: ({ captures }) => {
+            test: ({ captures }) => {
                 const word = captures[0];
                 // if plural word is ended in "s", ignore it.
                 const isEndedS = word[word.length - 1] === "s";
@@ -25,7 +25,7 @@ const report = context => {
         // NG: singular noun + '
         {
             pattern: /([\w\s]+)'(?!s)/,
-            replaceTest: ({ captures }) => {
+            test: ({ captures }) => {
                 // ... word's
                 // or ... the word's
                 const words = captures[0].split(" ");

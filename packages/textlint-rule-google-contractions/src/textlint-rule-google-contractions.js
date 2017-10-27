@@ -13,7 +13,7 @@ const report = context => {
     const dictionaries = [
         {
             pattern: /(\w+)'s (\w+)/,
-            replaceTest: ({ all, captures }) => {
+            test: ({ all, captures }) => {
                 // name
                 return (
                     /^NN/.test(getPosFromSingleWord(captures[0])) &&
@@ -29,7 +29,7 @@ const report = context => {
         {
             // These machines’re slow.
             pattern: /(\w+)'re (\w+)/,
-            replaceTest: ({ all, captures }) => {
+            test: ({ all, captures }) => {
                 // name
                 return (
                     /^NN/.test(getPosFromSingleWord(captures[0])) &&
@@ -45,7 +45,7 @@ const report = context => {
         {
             // The following guides're (a) good way to learn to use Universal Analytics.
             pattern: /(\w+)'re (\w+) (\w+)/,
-            replaceTest: ({ all, captures }) => {
+            test: ({ all, captures }) => {
                 // name
                 return (
                     /^NN/.test(getPosFromSingleWord(captures[0])) &&
