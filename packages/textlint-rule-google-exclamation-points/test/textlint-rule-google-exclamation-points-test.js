@@ -67,7 +67,7 @@ tester.run("textlint-rule-google-contractions", rule, {
             },
             errors: [
                 {
-                    message: `Disallow to use "?".`,
+                    message: `Disallow to use "?".` + URL,
                     line: 1,
                     column: 5
                 }
