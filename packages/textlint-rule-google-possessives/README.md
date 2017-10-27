@@ -2,6 +2,12 @@
 
 Reference [Possessives  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/possessives "Possessives  |  Google Developer Documentation Style Guide  |  Google Developers")
 
+## Notes
+
+- NG: singular noun + `'`
+- NG: plural word + `'s`
+- OK: plural word without ended "s" + `'s`
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
