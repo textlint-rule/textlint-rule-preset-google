@@ -94,7 +94,8 @@ textlint --rule preset-google-developer README.md
     - [ ] Use quoted text
     - [ ] Punctuation and spacing
 - [Exclamation points](https://developers.google.com/style/exclamation-points)
-    - [ ] Don't use `!` and `?`
+    - :heavy_check_mark: `textlint-rule-google-possessives`
+    - [x] Don't use `!` and `?`
 - [Hyphens](https://developers.google.com/style/hyphens)
     - [ ] Don't hyphenate adverbs ending in "ly" 
     - [ ] Don't add words such as -from- or -between-.
