@@ -1,0 +1,43 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "textlint-rule-google-exclamation-points",
+  "version": "1.0.0",
+  "description": "Reference https://developers.google.com/style/exclamation-points",
+  "main": "lib/textlint-rule-google-exclamation-points.js",
+  "scripts": {
+    "test": "textlint-scripts test",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
+    "prepublish": "npm run --if-present build",
+    "build": "textlint-scripts build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "keywords": [
+    "textlintrule"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/textlint-rule/textlint-rule-preset-google.git"
+  },
+  "bugs": {
+    "url": "https://github.com/textlint-rule/textlint-rule-preset-google/issues"
+  },
+  "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-exclamation-points/",
+  "devDependencies": {
+    "prettier": "^1.7.4",
+    "textlint-scripts": "^1.2.4"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4
+  }
+}
