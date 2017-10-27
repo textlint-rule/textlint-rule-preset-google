@@ -17,11 +17,11 @@ const report = context => {
         },
         {
             pattern: /Click ([\w-]+) if you want to (.+)./,
-            replace: ({ captures }) => {
-                return `To ${captures[1]}, click ${captures[0]}.`;
-            },
             test: ({ all, captures }) => {
                 return /^VB/.test(getPos(all, captures[0]));
+            },
+            replace: ({ captures }) => {
+                return `To ${captures[1]}, click ${captures[0]}.`;
             },
             message: () => defaultMessage
         }
