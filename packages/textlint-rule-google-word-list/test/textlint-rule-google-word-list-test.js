@@ -18,7 +18,7 @@ tester.run("textlint-rule-google-word-list", rule, {
         "among",
         "AM, PM",
         "and/or",
-        "Android (never \"android\")",
+        'Android (never "android")',
         "Android-powered device\n",
         "any time (noun), anytime (adverb)",
         "API",
@@ -83,7 +83,7 @@ tester.run("textlint-rule-google-word-list", rule, {
         "functionality",
         "GIF",
         "Google Account, Google Accounts (capital A)",
-        "Google API Client Library for\nFoo (Java, .NET, etc.) (or just \"Foo client\nlibrary\" on later use)",
+        'Google API Client Library for\nFoo (Java, .NET, etc.) (or just "Foo client\nlibrary" on later use)',
         "Google API Console ",
         "Google I/O ",
         "Google Play services",
@@ -101,7 +101,7 @@ tester.run("textlint-rule-google-word-list", rule, {
         "IoT",
         "jank",
         "JPEG",
-        "key-value , especially as in \"key-value\npair\"",
+        'key-value , especially as in "key-value\npair"',
         "lead-in (noun)",
         "lifecycle ",
         "limits",
@@ -186,7 +186,7 @@ tester.run("textlint-rule-google-word-list", rule, {
         "walkthrough ",
         "web (lowercase)",
         "web page",
-        "website (lowercase w; not \"web site\")",
+        'website (lowercase w; not "web site")',
         "whether",
         "whitespace ",
         "Wi-Fi ",
@@ -216,22 +216,16 @@ tester.run("textlint-rule-google-word-list", rule, {
         },
         {
             text: "click here",
-            errors: [
-                {index: 0}
-            ]
+            errors: [{ index: 0 }]
         },
         {
             text: "touch the display",
-            errors: [
-                {index: 0}
-            ]
+            errors: [{ index: 0 }]
         },
         {
             text: "administrator",
             output: "admin",
-            errors: [
-                {index: 0}
-            ]
+            errors: [{ index: 0 }]
         }
     ]
 });

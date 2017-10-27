@@ -1,6 +1,6 @@
 // MIT © 2017 azu
 "use strict";
-import {paragraphReporter, getPosFromSingleWord} from "textlint-report-helper-for-google-preset";
+import { paragraphReporter, getPosFromSingleWord } from "textlint-report-helper-for-google-preset";
 
 const report = context => {
     // Politeness and use of "please"
@@ -12,7 +12,7 @@ const report = context => {
         },
         {
             word: "access",
-            replaceTest: ({all}) => {
+            replaceTest: ({ all }) => {
                 return /^VB/.test(getPosFromSingleWord(all)); // Verb
             },
             message:
@@ -81,15 +81,16 @@ const report = context => {
         },
         {
             word: /check (.*)/,
-            replaceTest: ({all}) => {
+            replaceTest: ({ all }) => {
                 return /checkbox/i.test(all);
             },
-            replace: ({captures}) => `select ${captures[0]}`,
+            replace: ({ captures }) => `select ${captures[0]}`,
             message: 'Don\'t use to refer to marking a checkbox. Instead, use "select."'
         },
         {
             word: "click here",
-            message: "Don't use. For details and alternatives, see Link text. https://developers.google.com/style/link-text"
+            message:
+                "Don't use. For details and alternatives, see Link text. https://developers.google.com/style/link-text"
         },
         {
             word: "content type",
@@ -191,8 +192,9 @@ const report = context => {
         },
         {
             word: "should",
-            message: "Generally avoid." +
-            "When telling the reader what to do, \"should\" implies recommended but optional, which leaves the reader unsure of what to do. Better to use \"must\" or just leave out the word \"should.\""
+            message:
+                "Generally avoid." +
+                'When telling the reader what to do, "should" implies recommended but optional, which leaves the reader unsure of what to do. Better to use "must" or just leave out the word "should."'
         },
         {
             word: "sign-on",
@@ -215,12 +217,12 @@ const report = context => {
             message: 'Use alternatives to "ssh\'ing" unless there is just no way around it.'
         },
         {
-            word: 'tap & hold',
+            word: "tap & hold",
             replace: () => "touch & hold",
             message: 'Use "touch & hold" (not "touch and hold") instead. (Note the "&". It\'s OK\nto use in this case.)'
         },
         {
-            word: 'tap and hold',
+            word: "tap and hold",
             replace: () => "touch & hold",
             message: 'Use "touch & hold" (not "touch and hold") instead. (Note the "&". It\'s OK\nto use in this case.)'
         },
@@ -230,13 +232,13 @@ const report = context => {
         },
         {
             word: /touch (.*?)/,
-            replaceTest: ({all}) => {
+            replaceTest: ({ all }) => {
                 if (/touch & hold/.test(all)) {
                     return false;
                 }
                 return true;
             },
-            replace: ({captures}) => `tap ${captures[0]}`,
+            replace: ({ captures }) => `tap ${captures[0]}`,
             message: 'Don\'t use. Instead, use "tap." However, "touch & hold" is OK to use.'
         },
         {
@@ -276,7 +278,7 @@ const report = context => {
         };
     });
 
-    const {Syntax, RuleError, fixer, report} = context;
+    const { Syntax, RuleError, fixer, report } = context;
     return {
         [Syntax.Paragraph](node) {
             paragraphReporter({
