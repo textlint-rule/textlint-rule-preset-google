@@ -1,6 +1,6 @@
 # textlint-rule-google-possessives
 
-Reference https://developers.google.com/style/possessives
+Reference [Possessives  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/possessives "Possessives  |  Google Developer Documentation Style Guide  |  Google Developers")
 
 ## Install
 
