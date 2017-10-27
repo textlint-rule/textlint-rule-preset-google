@@ -1,6 +1,10 @@
 # textlint-rule-google-exclamation-points
 
-Reference https://developers.google.com/style/exclamation-points
+Reference [Exclamation points  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/exclamation-points)
+
+See also:
+          
+- [azu/textlint-rule-no-exclamation-question-mark: textlint rule that disallow exclamation and question mark.](https://github.com/azu/textlint-rule-no-exclamation-question-mark)
 
 ## Install
 
@@ -24,6 +28,21 @@ Via CLI
 
 ```
 textlint --rule google-exclamation-points README.md
+```
+
+## Options
+
+```json
+{
+    // allow to use !
+    "allowHalfWidthExclamation": false,
+    // allow to use ！
+    "allowFullWidthExclamation": false,
+    // allow to use ?
+    "allowHalfWidthQuestion": false,
+    // allow to use ？
+    "allowFullWidthQuestion": false
+}
 ```
 
 

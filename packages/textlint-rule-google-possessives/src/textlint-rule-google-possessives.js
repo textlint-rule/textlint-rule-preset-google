@@ -34,7 +34,6 @@ const report = context => {
                 // if "the word's", ignore this
                 if (determinerWord !== undefined) {
                     const determinerType = getPosFromSingleWord(determinerWord);
-                    console.log(determinerType);
                     // skip: the a
                     if (determinerType === "DT") {
                         return false;
