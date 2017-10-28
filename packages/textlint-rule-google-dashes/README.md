@@ -33,8 +33,8 @@ textlint --rule google-dashes README.md
 
 ## TODO
 
-- [ ] When you need a dash, use an em dash.
-  - How to implement this?
+- [ ] use colon instead of dash or hyphen
+  - Currently, support partially
 
 
 ## Changelog
