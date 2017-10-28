@@ -1,6 +1,6 @@
 # textlint-rule-google-ellipses
 
-Reference: https://developers.google.com/style/ellipses
+Reference: [Ellipses  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/ellipses "Ellipses  |  Google Developer Documentation Style Guide  |  Google Developers")
 
 ## Install
 
