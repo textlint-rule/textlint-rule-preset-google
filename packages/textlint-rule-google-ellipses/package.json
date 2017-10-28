@@ -41,7 +41,6 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0",
-    "textlint-tester": "3.0.0-beta.1"
+    "textlint-report-helper-for-google-preset": "^1.0.0"
   }
 }
