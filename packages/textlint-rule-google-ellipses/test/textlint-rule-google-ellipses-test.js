@@ -51,6 +51,16 @@ tester.run("textlint-rule-google-ellipses", rule, {
                     index: 58
                 }
             ]
+        },
+        {
+            text: "You don't need to understand all the other `Python` code in there...we'll explain it all in class.",
+            output:
+                "You don't need to understand all the other `Python` code in there ... we'll explain it all in class.",
+            errors: [
+                {
+                    index: 60
+                }
+            ]
         }
     ]
 });
