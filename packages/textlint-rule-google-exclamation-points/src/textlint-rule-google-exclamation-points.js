@@ -3,21 +3,24 @@
 const noExclamationQuestionMark = require("textlint-rule-no-exclamation-question-mark");
 const defaultOptions = {
     // allow to use !
-    "allowHalfWidthExclamation": false,
+    allowHalfWidthExclamation: false,
     // allow to use ！
-    "allowFullWidthExclamation": false,
+    allowFullWidthExclamation: false,
     // allow to use ?
-    "allowHalfWidthQuestion": false,
+    allowHalfWidthQuestion: false,
     // allow to use ？
-    "allowFullWidthQuestion": false
+    allowFullWidthQuestion: false
 };
 const linter = (context, options = defaultOptions) => {
-    const {RuleError, report} = context;
-    return noExclamationQuestionMark(Object.assign({}, context, {
-        report: (node, error) => {
-            error.message += "\nhttps://developers.google.com/style/exclamation-points";
-            report(node, error);
-        }
-    }), options);
+    const { RuleError, report } = context;
+    return noExclamationQuestionMark(
+        Object.assign({}, context, {
+            report: (node, error) => {
+                error.message += "\nhttps://developers.google.com/style/exclamation-points";
+                report(node, error);
+            }
+        }),
+        options
+    );
 };
 module.exports = linter;
