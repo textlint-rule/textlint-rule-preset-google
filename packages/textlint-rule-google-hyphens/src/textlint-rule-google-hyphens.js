@@ -10,7 +10,6 @@ const report = context => {
             pattern: /(\w+ly)-(\w+)/g,
             test: ({ captures }) => {
                 const pos = getPosFromSingleWord(captures[0]);
-                console.log(captures, pos);
                 return pos === PosType.Adverb;
             },
             replace: ({ captures }) => {
