@@ -112,7 +112,8 @@ textlint --rule preset-google-developer README.md
     - [x] Single quotation marks
 - [Semicolons](https://developers.google.com/style/semicolons)
 - [Slashes](https://developers.google.com/style/slashes)
-    - [ ] Slashes with dates — [Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/dates-times "Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers")
+    - [ ] Slashes with dates 
+    — [Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/dates-times "Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers")
     - [ ] Slashes with alternatives
     - [ ] Slashes with fractions
     - [ ] Slashes with abbreviations
