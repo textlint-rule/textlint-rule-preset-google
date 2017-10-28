@@ -200,32 +200,28 @@ tester.run("textlint-rule-google-word-list", rule, {
             text: "This is an application.",
             output: "This is an app.",
             errors: [
-                {
-                    index: 0
-                }
+                {}
             ]
         },
         {
             text: "This app apply autoupdate.",
             output: "This app apply automatically update.",
             errors: [
-                {
-                    index: 0
-                }
+                {}
             ]
         },
         {
             text: "click here",
-            errors: [{ index: 0 }]
+            errors: [{}]
         },
         {
             text: "touch the display",
-            errors: [{ index: 0 }]
+            errors: [{}]
         },
         {
             text: "administrator",
             output: "admin",
-            errors: [{ index: 0 }]
+            errors: [{}]
         }
     ]
 });
