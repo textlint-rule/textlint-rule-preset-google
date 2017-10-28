@@ -15,26 +15,22 @@ tester.run("textlint-rule-google-dashes", rule, {
     invalid: [
         // hyphen to dash
         {
-            text: "To indicate a break in the flow of a sentence - or an interruption—use an em dash, also known as a long dash. Don't put a space before or after it.",
-            output: "To indicate a break in the flow of a sentence—or an interruption—use an em dash, also known as a long dash. Don't put a space before or after it.",
-            errors: [
-                {}
-            ]
+            text:
+                "To indicate a break in the flow of a sentence - or an interruption—use an em dash, also known as a long dash. Don't put a space before or after it.",
+            output:
+                "To indicate a break in the flow of a sentence—or an interruption—use an em dash, also known as a long dash. Don't put a space before or after it.",
+            errors: [{}]
         },
         {
             text: "The food - which was delicious - reminded me of home.",
             output: "The food—which was delicious—reminded me of home.",
-            errors: [
-                {}, {}
-            ]
+            errors: [{}, {}]
         },
         // — dash
         {
             text: "example — This is an example.",
             output: "example: This is an example.",
-            errors: [
-                {}
-            ]
+            errors: [{}]
         },
         // - hyphen
         {
@@ -43,12 +39,13 @@ tester.run("textlint-rule-google-dashes", rule, {
             errors: [
                 // prefer use colons:
                 {
-                    "message": "use colons(:) instead of dashes(-) in lists\nhttps://developers.google.com/style/dashes",
+                    message: "use colons(:) instead of dashes(-) in lists\nhttps://developers.google.com/style/dashes"
                 },
                 {
-                    "message": "use \"—\"(em dash) instead of \" - \"(hyphen)\nhttps://developers.google.com/style/dashes",
-                }]
-        },
+                    message: 'use "—"(em dash) instead of " - "(hyphen)\nhttps://developers.google.com/style/dashes'
+                }
+            ]
+        }
         // Not yet support
         // {
         //     text: "Appendix A - My First Appendix.",

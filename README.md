@@ -93,8 +93,9 @@ textlint --rule preset-google-developer README.md
     - [x] use `—` insteadof `-`
     - [x] Colons instead of dashes in lists
 - [Ellipses](https://developers.google.com/style/ellipses)
-    - [ ] Use quoted text
-    - [ ] Punctuation and spacing
+    - :heavy_check_mark: `textlint-rule-google-ellipses`
+    - [x] Use quoted text
+    - [x] Punctuation and spacing
 - [Exclamation points](https://developers.google.com/style/exclamation-points)
     - :heavy_check_mark: `textlint-rule-google-possessives`
     - [x] Don't use `!` and `?`
