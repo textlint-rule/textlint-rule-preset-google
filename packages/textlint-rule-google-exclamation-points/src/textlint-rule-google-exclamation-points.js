@@ -12,9 +12,9 @@ const defaultOptions = {
     allowFullWidthQuestion: false
 };
 const linter = (context, options = defaultOptions) => {
-    const { RuleError, report } = context;
+    const {report} = context;
     return noExclamationQuestionMark(
-        Object.assign({}, context, {
+        Object.assign(context, {
             report: (node, error) => {
                 error.message += "\nhttps://developers.google.com/style/exclamation-points";
                 report(node, error);
