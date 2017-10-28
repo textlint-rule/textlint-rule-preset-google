@@ -62,7 +62,7 @@ export const PosType = {
     PoundSign: "#",
     CurrencySymbols: "$",
     OtherSymbols: "SYM",
-    EmojisEmoticons: "EM"
+    EmojisEmoticons: "EM",
 };
 
 export const getPosFromSingleWord = (word: string): string => {
