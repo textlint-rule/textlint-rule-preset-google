@@ -39,10 +39,7 @@ const report = context => {
             replace: ({ captures }) => {
                 return `${captures[0]} ... ${captures[1]}`;
             },
-            message: () =>
-                "Insert one space before and after the ellipsis unless a punctuation mark immediately follows the ellipsis; in this case, don't insert a space after the ellipsis." +
-                "\n" +
-                DocumentURL
+            message: () => "Insert one space before and after the ellipsis" + "\n" + DocumentURL
         }
     ];
 

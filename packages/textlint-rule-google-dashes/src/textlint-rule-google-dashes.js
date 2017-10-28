@@ -39,7 +39,7 @@ const report = context => {
             replace: ({ captures }) => {
                 return `${captures[0]}: ${captures[3]}`;
             },
-            message: () => "use colons(:) instead of dashes(-) in lists" + "\n" + DocumentURL
+            message: () => "Use colons(:) instead of dashes(-) in lists" + "\n" + DocumentURL
         },
         {
             // use "—"(em dash) instead of " - "(hyphen)
@@ -49,7 +49,7 @@ const report = context => {
             replace: ({ captures }) => {
                 return `${captures[0]}—${captures[1]}`;
             },
-            message: () => 'use "—"(em dash) instead of " - "(hyphen)' + "\n" + DocumentURL
+            message: () => 'Use "—"(em dash) instead of " - "(hyphen)' + "\n" + DocumentURL
         }
     ];
 

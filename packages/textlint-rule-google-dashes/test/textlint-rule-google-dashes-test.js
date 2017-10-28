@@ -39,10 +39,10 @@ tester.run("textlint-rule-google-dashes", rule, {
             errors: [
                 // prefer use colons:
                 {
-                    message: "use colons(:) instead of dashes(-) in lists\nhttps://developers.google.com/style/dashes"
+                    message: "Use colons(:) instead of dashes(-) in lists\nhttps://developers.google.com/style/dashes"
                 },
                 {
-                    message: 'use "—"(em dash) instead of " - "(hyphen)\nhttps://developers.google.com/style/dashes'
+                    message: 'Use "—"(em dash) instead of " - "(hyphen)\nhttps://developers.google.com/style/dashes'
                 }
             ]
         }
