@@ -107,10 +107,13 @@ textlint --rule preset-google-developer README.md
 - [Periods](https://developers.google.com/style/periods)
 - [Pluralizing a single letter](https://developers.google.com/style/plural-single-letter)
 - [Quotation marks](https://developers.google.com/style/quotation-marks)
+    - :heavy_check_mark: `textlint-rule-google-quotation-marks`
     - [ ] American Style
+    - [x] Single quotation marks
 - [Semicolons](https://developers.google.com/style/semicolons)
 - [Slashes](https://developers.google.com/style/slashes)
-    - [ ] Slashes with dates — [Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/dates-times "Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers")
+    - [ ] Slashes with dates 
+    — [Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/dates-times "Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers")
     - [ ] Slashes with alternatives
     - [ ] Slashes with fractions
     - [ ] Slashes with abbreviations
