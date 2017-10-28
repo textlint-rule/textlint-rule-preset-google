@@ -89,7 +89,9 @@ textlint --rule preset-google-developer README.md
 - [Colons](https://developers.google.com/style/colons)
 - [Commas](https://developers.google.com/style/commas)
 - [Dashes](https://developers.google.com/style/dashes)
-    - [ ] use `—` insteadof `-`
+    - :heavy_check_mark: `textlint-rule-google-dashes`
+    - [x] use `—` insteadof `-`
+    - [x] Colons instead of dashes in lists
 - [Ellipses](https://developers.google.com/style/ellipses)
     - [ ] Use quoted text
     - [ ] Punctuation and spacing
