@@ -100,8 +100,9 @@ textlint --rule preset-google-developer README.md
     - :heavy_check_mark: `textlint-rule-google-possessives`
     - [x] Don't use `!` and `?`
 - [Hyphens](https://developers.google.com/style/hyphens)
-    - [ ] Don't hyphenate adverbs ending in "ly" 
-    - [ ] Don't add words such as -from- or -between-.
+    - :heavy_check_mark: `textlint-rule-google-hyphens`
+    - [x] Don't hyphenate adverbs ending in "ly" 
+    - [x] Don't add words such as -from- or -between-.
 - [Parentheses](https://developers.google.com/style/parentheses)
 - [Periods](https://developers.google.com/style/periods)
 - [Pluralizing a single letter](https://developers.google.com/style/plural-single-letter)
