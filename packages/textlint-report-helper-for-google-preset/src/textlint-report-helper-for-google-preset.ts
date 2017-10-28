@@ -94,7 +94,7 @@ export interface StrReporterArgs {
     report: (node: any, message: any) => void;
     RuleError: any;
     fixer: any;
-    getSource: any;
+    getSource: (node: any, beforeCount?: number, afterCount?: number) => string;
 }
 
 export const strReporter = ({ node, dictionaries, report, RuleError, fixer, getSource }: StrReporterArgs) => {
@@ -106,6 +106,15 @@ export const strReporter = ({ node, dictionaries, report, RuleError, fixer, getS
         }
         matchTestReplaceReturn.results.forEach(result => {
             const index = result.index;
+            if (!result.replace) {
+                report(
+                    node,
+                    new RuleError(result.message, {
+                        index
+                    })
+                );
+                return;
+            }
             const endIndex = result.index + result.match.length;
             const range = [index, endIndex];
             report(
@@ -125,9 +134,18 @@ export interface ParagraphReporterArgs {
     report: (node: any, message: any) => void;
     RuleError: any;
     fixer: any;
+    getSource: (node: any, beforeCount?: number, afterCount?: number) => string;
 }
 
-export const paragraphReporter = ({ node, dictionaries, report, RuleError, fixer }: ParagraphReporterArgs) => {
+export const paragraphReporter = ({
+    node,
+    dictionaries,
+    getSource,
+    report,
+    RuleError,
+    fixer
+}: ParagraphReporterArgs) => {
+    const originalText = getSource(node);
     const source = new StringSource(node);
     const text = source.toString();
     dictionaries.forEach(dict => {
@@ -139,6 +157,26 @@ export const paragraphReporter = ({ node, dictionaries, report, RuleError, fixer
             const index = source.originalIndexFromIndex(result.index);
             const endIndex = source.originalIndexFromIndex(result.index + result.match.length);
             const range = [index, endIndex];
+            if (!result.replace) {
+                report(
+                    node,
+                    new RuleError(result.message, {
+                        index
+                    })
+                );
+                return;
+            }
+            const beforeText = originalText.slice(index, endIndex);
+            if (beforeText !== result.match) {
+                // TODO: currently not support this node that includes Link, Code etc... node in the paragraph
+                report(
+                    node,
+                    new RuleError(result.message, {
+                        index
+                    })
+                );
+                return;
+            }
             report(
                 node,
                 new RuleError(result.message, {

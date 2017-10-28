@@ -83,12 +83,13 @@ const report = context => {
         }
     ];
 
-    const { Syntax, RuleError, fixer, report } = context;
+    const { Syntax, RuleError, getSource, fixer, report } = context;
     return {
         [Syntax.Paragraph](node) {
             paragraphReporter({
                 node,
                 dictionaries,
+                getSource,
                 report,
                 RuleError,
                 fixer

@@ -12,7 +12,7 @@ const defaultOptions = {
     allowFullWidthQuestion: false
 };
 const linter = (context, options = defaultOptions) => {
-    const {report} = context;
+    const { report } = context;
     return noExclamationQuestionMark(
         Object.assign(context, {
             report: (node, error) => {

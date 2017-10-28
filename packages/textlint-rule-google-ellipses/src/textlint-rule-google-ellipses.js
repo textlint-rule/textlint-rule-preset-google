@@ -4,7 +4,7 @@ import { paragraphReporter, getPosFromSingleWord } from "textlint-report-helper-
 
 const DocumentURL = "https://developers.google.com/style/ellipses";
 const report = context => {
-    const { Syntax, RuleError, fixer, report } = context;
+    const { Syntax, RuleError, getSource, fixer, report } = context;
     const dictionaries = [
         // NG: Suspension points
         {
@@ -49,6 +49,7 @@ const report = context => {
                 node,
                 dictionaries,
                 report,
+                getSource,
                 RuleError,
                 fixer
             });

@@ -1,10 +1,10 @@
 // MIT © 2017 azu
 "use strict";
-import {paragraphReporter, strReporter, getPos, PosType} from "textlint-report-helper-for-google-preset";
+import { paragraphReporter, strReporter, getPos, PosType } from "textlint-report-helper-for-google-preset";
 
 const DocumentURL = "https://developers.google.com/style/dashes";
 const report = context => {
-    const {Syntax, RuleError, getSource, fixer, report} = context;
+    const { Syntax, RuleError, getSource, fixer, report } = context;
     // Notes: the order is important when Apply fixes
     const dictionaries = [
         {
@@ -12,7 +12,7 @@ const report = context => {
             // Partial support:
             // use colon instead of dash or hyphen
             pattern: /((?:^.* )?(\w+)) ([—-]) ((\w+) .*)$/,
-            test: ({all, captures}) => {
+            test: ({ all, captures }) => {
                 const dashes = captures[2];
                 const afterText = captures[3];
                 // OK:
@@ -36,7 +36,7 @@ const report = context => {
                 const pos = getPos(all, captures[1]);
                 return pos === PosType.Noun;
             },
-            replace: ({captures}) => {
+            replace: ({ captures }) => {
                 return `${captures[0]}: ${captures[3]}`;
             },
             message: () => "Use colons(:) instead of dashes(-) in lists" + "\n" + DocumentURL
@@ -46,7 +46,7 @@ const report = context => {
             // Notes: Allow to use hyphen for Ranges of numbers
             // https://developers.google.com/style/numbers#ranges-of-numbers
             pattern: /([a-zA-Z]+) - ([a-zA-Z]+)/g,
-            replace: ({captures}) => {
+            replace: ({ captures }) => {
                 return `${captures[0]}—${captures[1]}`;
             },
             message: () => 'Use "—"(em dash) instead of " - "(hyphen)' + "\n" + DocumentURL
