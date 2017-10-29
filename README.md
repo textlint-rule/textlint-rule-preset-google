@@ -57,9 +57,9 @@ textlint --rule preset-google-developer README.md
     - [ ] use active voice instead of passive voice
 - [Anthropomorphism](https://developers.google.com/style/anthropomorphism)
 - [Articles (a, an, the)](https://developers.google.com/style/articles)
-    - :no_entry_sign: We can not implement this because "a" or "an" depends on the pronunciation 
+    - :heavy_check_mark: `textlint-rule-google-articles`
+    - [x] a/an = indefinite article
     - [ ] the = definite article
-    - [ ] a/an = indefinite article
 - [Capitalization](https://developers.google.com/style/capitalization)
     - [ ] [Purdue OWL: Capital Letters](https://owl.english.purdue.edu/owl/resource/592/01/ "Purdue OWL: Capital Letters")
 - [Clause order](https://developers.google.com/style/clause-order)

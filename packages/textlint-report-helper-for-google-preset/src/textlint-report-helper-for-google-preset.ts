@@ -3,6 +3,7 @@ import { matchTestReplace, TestMatchReplaceReturnDict } from "match-test-replace
 import { EnglishParser } from "nlcst-parse-english";
 import { Tag } from "en-pos";
 
+const { RuleHelper } = require("textlint-rule-helper");
 const toString = require("nlcst-to-string");
 const StringSource = require("textlint-util-to-string");
 const findUnistNode = require("unist-util-find");
@@ -86,6 +87,13 @@ export const getPos = (text: string, word: string): string => {
         return node.data.pos;
     }
     return "";
+};
+
+// str
+export const shouldIgnoreNodeOfStrNode = (node: any, context: any) => {
+    const helper = new RuleHelper(context);
+    const Syntax = context.Syntax;
+    return helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote, Syntax.Emphasis]);
 };
 
 export interface StrReporterArgs {
