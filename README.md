@@ -50,9 +50,10 @@ textlint --rule preset-google-developer README.md
     - [x] Avoid misplaced modifiers.
 - Language and grammar
 - [Abbreviations](https://developers.google.com/style/abbreviations)
-    - [x] [textlint-rule-abbr-within-parentheses](https://github.com/azu/textlint-rule-abbr-within-parentheses "textlint-rule-abbr-within-parentheses")
-    - [ ] Prefer English terms over Latin abbreviations. Don't use "i.e." or "e.g.";
-    - [ ] instead, use "that is" or "for example," respectively.
+    - :heavy_check_mark: `textlint-rule-google-abbreviations`
+    - [x] Prefer English terms over Latin abbreviations. Don't use "i.e." or "e.g.";
+      - instead, use "that is" or "for example," respectively.
+    - [x] Periods with abbreviations
 - [Active voice](https://developers.google.com/style/voice)
     - [ ] use active voice instead of passive voice
 - [Anthropomorphism](https://developers.google.com/style/anthropomorphism)
