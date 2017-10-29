@@ -6,7 +6,7 @@ const tester = new TextLintTester();
 const rule = require("../src/textlint-rule-google-possessives");
 const defaultMessage = require("../src/textlint-rule-google-possessives").defaultMessage;
 // ruleName, rule, { valid, invalid }
-tester.run("rule", rule, {
+tester.run("textlint-rule-google-possessives", rule, {
     valid: [
         "Each component has its own set of traits.",
         "This is business's book.",
