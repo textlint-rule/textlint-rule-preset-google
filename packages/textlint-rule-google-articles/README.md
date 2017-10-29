@@ -41,6 +41,14 @@ Specify article by `a` and `an`.
 }
 ```
 
+## FAQ
+
+### Wrong error
+
+To improve classifier, please file issue to
+
+- [azu/english-article-classifier: Classifier english article(a, an).](https://github.com/azu/english-article-classifier "azu/english-article-classifier: Classifier english article(a, an).")
+
 ## Changelog
 
 See [Releases page](https://github.com/textlint-rule/textlint-rule-preset-google/releases).
