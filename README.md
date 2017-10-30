@@ -62,7 +62,13 @@ textlint --rule preset-google-developer README.md
     - [x] a/an = indefinite article
     - [ ] the = definite article
 - [Capitalization](https://developers.google.com/style/capitalization)
-    - [ ] [Purdue OWL: Capital Letters](https://owl.english.purdue.edu/owl/resource/592/01/ "Purdue OWL: Capital Letters")
+    - :heavy_check_mark: `textlint-rule-google-capitalization`
+    - [x] Capitalization in titles and headings
+    - [ ] Capitalization and colons
+    - [x] Capitalization and figures
+    - [x] Capitalization and hyphenated words
+    - [x] Capitalization in lists
+    - [ ] Capitalization for tables in text
 - [Clause order](https://developers.google.com/style/clause-order)
     - :heavy_check_mark: `textlint-rule-google-clause-order`
     - [x] For more details
