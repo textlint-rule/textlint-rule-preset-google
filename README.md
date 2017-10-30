@@ -74,7 +74,9 @@ textlint --rule preset-google-developer README.md
     - [x] For more details
     - [x] To ~, instruction
 - [Contractions](https://developers.google.com/style/contractions)
-    - [ ] Don't use double contractions
+    - :heavy_check_mark: `textlint-rule-google-contractions`
+    - [x] Noun+verb contractions
+    - [x] Don't use double contractions
 - [Cross-references](https://developers.google.com/style/cross-references)
 - [Prepositions](https://developers.google.com/style/prepositions)
 - [Present tense](https://developers.google.com/style/tense)
