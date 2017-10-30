@@ -120,11 +120,12 @@ textlint --rule preset-google-developer README.md
     - [x] Single quotation marks
 - [Semicolons](https://developers.google.com/style/semicolons)
 - [Slashes](https://developers.google.com/style/slashes)
-    - [ ] Slashes with dates 
-    — [Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/dates-times "Dates and times  |  Google Developer Documentation Style Guide  |  Google Developers")
-    - [ ] Slashes with alternatives
-    - [ ] Slashes with fractions
-    - [ ] Slashes with abbreviations
+    - :heavy_check_mark: `textlint-rule-google-slashes`
+    - [ ] Slashes with dates
+    - [ ] Slashes with file paths and URLs
+    - [x] Slashes with alternatives
+    - [x] Slashes with fractions
+    - [x] Slashes with abbreviations
 - Formatting and organization
 - [Dates and times](https://developers.google.com/style/dates-times)
 - [Figures and other images](https://developers.google.com/style/images)

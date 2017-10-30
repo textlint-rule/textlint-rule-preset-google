@@ -1,6 +1,6 @@
 # @textlint-rule/textlint-rule-google-slashes
 
-Reference: https://developers.google.com/style/slashes
+Reference: [Slashes  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/slashes "Slashes  |  Google Developer Documentation Style Guide  |  Google Developers")
 
 ## Install
 

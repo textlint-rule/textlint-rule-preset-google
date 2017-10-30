@@ -160,6 +160,8 @@ export const paragraphReporter = ({
     const source = new StringSource(node);
     const text = source.toString();
     const ignoreNodeManager = new IgnoreNodeManager();
+    // Ignore following pattern
+    // Paragraph > Link Code Html ...
     ignoreNodeManager.ignoreChildrenByTypes(node, [Syntax.Code, Syntax.Link, Syntax.BlockQuote, Syntax.Html]);
     dictionaries.forEach(dict => {
         const matchTestReplaceReturn = matchTestReplace(text, dict);
@@ -185,7 +187,6 @@ export const paragraphReporter = ({
             }
             const beforeText = originalText.slice(index, endIndex);
             if (beforeText !== result.match) {
-                // TODO: currently not support this node that includes Link, Code etc... node in the paragraph
                 report(
                     node,
                     new RuleError(result.message, {
