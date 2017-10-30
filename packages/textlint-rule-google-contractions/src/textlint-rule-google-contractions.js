@@ -87,6 +87,7 @@ const report = context => {
     return {
         [Syntax.Paragraph](node) {
             paragraphReporter({
+                Syntax,
                 node,
                 dictionaries,
                 getSource,

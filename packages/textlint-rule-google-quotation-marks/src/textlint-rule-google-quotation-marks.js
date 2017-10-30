@@ -43,6 +43,7 @@ In the latter case, put the primary speaker's quote in double quotation marks an
     return {
         [Syntax.Paragraph](node) {
             return paragraphReporter({
+                Syntax,
                 node,
                 dictionaries,
                 report,

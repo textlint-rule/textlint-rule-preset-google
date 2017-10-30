@@ -49,6 +49,7 @@
   },
   "types": "lib/textlint-report-helper-for-google-preset.d.ts",
   "dependencies": {
+    "@textlint/ast-node-types": "^2.0.0",
     "en-lexicon": "^1.0.11",
     "en-pos": "^1.0.16",
     "match-test-replace": "^1.1.0",
