@@ -1,6 +1,6 @@
 # @textlint-rule/textlint-rule-google-sentence-spacing
 
-Reference: https://developers.google.com/style/sentence-spacing
+Reference: [Spaces between sentences  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/sentence-spacing "Spaces between sentences  |  Google Developer Documentation Style Guide  |  Google Developers")
 
 ## Install
 

@@ -139,6 +139,8 @@ textlint --rule preset-google-developer README.md
 - [Phone numbers](https://developers.google.com/style/phone-numbers)
 - [Procedures](https://developers.google.com/style/procedures)
 - [Spaces between sentences](https://developers.google.com/style/sentence-spacing)
+    - :heavy_check_mark: `textlint-rule-google-sentence-spacing`
+    - [x] Leave only one space between sentences
 - [Tables](https://developers.google.com/style/tables)
 - [Units of measurement](https://developers.google.com/style/units-of-measure)
     - [ ] Formatting units of measurement
