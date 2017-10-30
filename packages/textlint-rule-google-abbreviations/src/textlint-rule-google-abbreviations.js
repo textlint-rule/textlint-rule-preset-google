@@ -35,6 +35,7 @@ const report = context => {
     return {
         [Syntax.Paragraph](node) {
             return paragraphReporter({
+                Syntax,
                 node,
                 dictionaries,
                 report,

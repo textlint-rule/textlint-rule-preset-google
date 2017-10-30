@@ -2,8 +2,9 @@
 import { matchTestReplace, TestMatchReplaceReturnDict } from "match-test-replace";
 import { EnglishParser } from "nlcst-parse-english";
 import { Tag } from "en-pos";
+import { ASTNodeTypes } from "@textlint/ast-node-types";
 
-const { RuleHelper } = require("textlint-rule-helper");
+const { RuleHelper, IgnoreNodeManager } = require("textlint-rule-helper");
 const toString = require("nlcst-to-string");
 const StringSource = require("textlint-util-to-string");
 const findUnistNode = require("unist-util-find");
@@ -137,6 +138,7 @@ export const strReporter = ({ node, dictionaries, report, RuleError, fixer, getS
 };
 
 export interface ParagraphReporterArgs {
+    Syntax: typeof ASTNodeTypes;
     node: any;
     dictionaries: TestMatchReplaceReturnDict[];
     report: (node: any, message: any) => void;
@@ -146,6 +148,7 @@ export interface ParagraphReporterArgs {
 }
 
 export const paragraphReporter = ({
+    Syntax,
     node,
     dictionaries,
     getSource,
@@ -156,6 +159,8 @@ export const paragraphReporter = ({
     const originalText = getSource(node);
     const source = new StringSource(node);
     const text = source.toString();
+    const ignoreNodeManager = new IgnoreNodeManager();
+    ignoreNodeManager.ignoreChildrenByTypes(node, [Syntax.Code, Syntax.Link, Syntax.BlockQuote, Syntax.Html]);
     dictionaries.forEach(dict => {
         const matchTestReplaceReturn = matchTestReplace(text, dict);
         if (matchTestReplaceReturn.ok === false) {
@@ -165,6 +170,10 @@ export const paragraphReporter = ({
             const index = source.originalIndexFromIndex(result.index);
             const endIndex = source.originalIndexFromIndex(result.index + result.match.length);
             const range = [index, endIndex];
+            // if the error is ignored, don't report
+            if (ignoreNodeManager.isIgnoredRange(range)) {
+                return;
+            }
             if (!result.replace) {
                 report(
                     node,
