@@ -8,7 +8,9 @@ Reference: [Spaces between sentences  |  Google Developer Documentation Style 
 
 ```
 sentence is 1. sentence 2. sentence 3.
+
 > sentence is 1.     sentence 2.
+
 This is ` obj.code   =    1;  `.
 
 [   .   .   . link is ok    .     .     . ](http://example.com)
