@@ -2,6 +2,33 @@
 
 Reference: [Spaces between sentences  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/sentence-spacing "Spaces between sentences  |  Google Developer Documentation Style Guide  |  Google Developers")
 
+## Example
+
+**OK**:
+
+```
+sentence is 1. sentence 2. sentence 3.
+> sentence is 1.     sentence 2.
+This is ` obj.code   =    1;  `.
+
+[   .   .   . link is ok    .     .     . ](http://example.com)
+
+# Allow first and last spaces 
+
+  sentence is 1. sentence 2. sentence 3.
+sentence is 1. sentence 2. sentence 3.  
+  sentence is 1. sentence 2. sentence 3.  
+```
+
+**NG**:
+
+```
+There are two sentence.  But have two space.
+sentence is 1.  sentence 2.  sentence 3.
+```
+
+
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
