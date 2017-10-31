@@ -10,12 +10,12 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-word-list",
+  "name": "@textlint-rule/textlint-rule-google-word-list",
   "version": "1.0.0",
   "description": "See https://developers.google.com/style/word-list",
   "main": "lib/textlint-rule-google-word-list.js",
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",

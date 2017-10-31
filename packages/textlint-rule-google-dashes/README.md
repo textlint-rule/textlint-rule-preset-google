@@ -1,4 +1,4 @@
-# textlint-rule-google-dashes
+# @textlint-rule/textlint-rule-google-dashes
 
 Reference:
 
@@ -11,7 +11,7 @@ Reference:
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-dashes
+    npm install @textlint-rule/textlint-rule-google-dashes
 
 ## Usage
 
@@ -20,7 +20,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-dashes": true
+        "@textlint-rule/google-dashes": true
     }
 }
 ```
@@ -28,7 +28,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-dashes README.md
+textlint --rule @textlint-rule/google-dashes README.md
 ```
 
 ## TODO

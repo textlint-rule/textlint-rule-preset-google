@@ -1,4 +1,4 @@
-# textlint-rule-google-word-list
+# @textlint-rule/textlint-rule-google-word-list
 
 For more details, see [Word list  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/word-list "Word list  |  Google Developer Documentation Style Guide  |  Google Developers")
 
@@ -6,7 +6,7 @@ For more details, see [Word list  |  Google Developer Documentation Style Guid
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-word-list
+    npm install @textlint-rule/textlint-rule-google-word-list
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-word-list": true
+        "@textlint-rule/google-word-list": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-word-list README.md
+textlint --rule @textlint-rule/google-word-list README.md
 ```
 
 

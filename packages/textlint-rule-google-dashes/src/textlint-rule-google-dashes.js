@@ -1,6 +1,11 @@
 // MIT © 2017 azu
 "use strict";
-import { paragraphReporter, strReporter, getPos, PosType } from "textlint-report-helper-for-google-preset";
+import {
+    paragraphReporter,
+    strReporter,
+    getPos,
+    PosType
+} from "@textlint-rule/textlint-report-helper-for-google-preset";
 
 const DocumentURL = "https://developers.google.com/style/dashes";
 const report = context => {

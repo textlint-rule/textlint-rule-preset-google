@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-tone",
+  "name": "@textlint-rule/textlint-rule-google-tone",
   "version": "1.0.0",
   "description": "Google Developer Documentation Style Guide:  Style and authorial tone ",
   "main": "lib/textlint-rule-google-tone.js",
@@ -47,6 +47,6 @@
     ]
   },
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
   }
 }

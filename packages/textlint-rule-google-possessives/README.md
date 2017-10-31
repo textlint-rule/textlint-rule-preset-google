@@ -1,4 +1,4 @@
-# textlint-rule-google-possessives
+# @textlint-rule/textlint-rule-google-possessives
 
 Reference [Possessives  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/possessives "Possessives  |  Google Developer Documentation Style Guide  |  Google Developers")
 
@@ -12,7 +12,7 @@ Reference [Possessives  |  Google Developer Documentation Style Guide  |  Go
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-possessives
+    npm install @textlint-rule/textlint-rule-google-possessives
 
 ## Usage
 
@@ -21,7 +21,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-possessives": true
+        "@textlint-rule/google-possessives": true
     }
 }
 ```
@@ -29,7 +29,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-possessives README.md
+textlint --rule @textlint-rule/google-possessives README.md
 ```
 
 

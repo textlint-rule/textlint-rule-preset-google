@@ -1,4 +1,4 @@
-# textlint-rule-google-exclamation-points
+# @textlint-rule/textlint-rule-google-exclamation-points
 
 Reference [Exclamation points  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/exclamation-points)
 
@@ -10,7 +10,7 @@ See also:
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-exclamation-points
+    npm install @textlint-rule/textlint-rule-google-exclamation-points
 
 ## Usage
 
@@ -19,7 +19,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-exclamation-points": true
+        "@textlint-rule/google-exclamation-points": true
     }
 }
 ```
@@ -27,7 +27,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-exclamation-points README.md
+textlint --rule @textlint-rule/google-exclamation-points README.md
 ```
 
 ## Options

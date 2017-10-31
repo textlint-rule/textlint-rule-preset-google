@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-quotation-marks",
+  "name": "@textlint-rule/textlint-rule-google-quotation-marks",
   "version": "1.0.0",
   "description": "Reference: https://developers.google.com/style/quotation-marks",
   "main": "lib/textlint-rule-google-quotation-marks.js",
@@ -41,6 +41,6 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
   }
 }

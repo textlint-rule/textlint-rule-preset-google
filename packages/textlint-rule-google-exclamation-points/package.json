@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-exclamation-points",
+  "name": "@textlint-rule/textlint-rule-google-exclamation-points",
   "version": "1.0.0",
   "description": "Reference https://developers.google.com/style/exclamation-points",
   "main": "lib/textlint-rule-google-exclamation-points.js",

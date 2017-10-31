@@ -1,4 +1,4 @@
-# textlint-rule-google-quotation-marks
+# @textlint-rule/textlint-rule-google-quotation-marks
 
 Reference: [Quotation marks  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/quotation-marks "Quotation marks  |  Google Developer Documentation Style Guide  |  Google Developers")
 
@@ -6,7 +6,7 @@ Reference: [Quotation marks  |  Google Developer Documentation Style Guide  |
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-quotation-marks
+    npm install @textlint-rule/textlint-rule-google-quotation-marks
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-quotation-marks": true
+        "@textlint-rule/google-quotation-marks": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-quotation-marks README.md
+textlint --rule @textlint-rule/google-quotation-marks README.md
 ```
 
 
