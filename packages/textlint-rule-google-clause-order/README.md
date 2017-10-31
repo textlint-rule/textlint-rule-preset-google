@@ -1,4 +1,4 @@
-# textlint-rule-google-clause-order
+# @textlint-rule/textlint-rule-google-clause-order
 
 For more information, see [Clause order  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/clause-order "Clause order  |  Google Developer Documentation Style Guide  |  Google Developers").
 
@@ -6,7 +6,7 @@ For more information, see [Clause order  |  Google Developer Documentation Sty
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-clause-order
+    npm install @textlint-rule/textlint-rule-google-clause-order
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-clause-order": true
+        "@textlint-rule/google-clause-order": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-clause-order README.md
+textlint --rule @textlint-rule/google-clause-order README.md
 ```
 
 

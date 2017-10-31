@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-report-helper-for-google-preset",
+  "name": "@textlint-rule/textlint-report-helper-for-google-preset",
   "version": "1.0.0",
   "description": "Report Helper function for google-preset.",
   "main": "lib/textlint-report-helper-for-google-preset.js",

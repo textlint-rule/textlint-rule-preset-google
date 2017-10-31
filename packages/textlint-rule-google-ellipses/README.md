@@ -1,4 +1,4 @@
-# textlint-rule-google-ellipses
+# @textlint-rule/textlint-rule-google-ellipses
 
 Reference: [Ellipses  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/ellipses "Ellipses  |  Google Developer Documentation Style Guide  |  Google Developers")
 
@@ -6,7 +6,7 @@ Reference: [Ellipses  |  Google Developer Documentation Style Guide  |  Goog
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-ellipses
+    npm install @textlint-rule/textlint-rule-google-ellipses
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-ellipses": true
+        "@textlint-rule/google-ellipses": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-ellipses README.md
+textlint --rule @textlint-rule/google-ellipses README.md
 ```
 
 

@@ -1,4 +1,4 @@
-# textlint-rule-google-tone
+# @textlint-rule/textlint-rule-google-tone
 
 See [Style and authorial tone  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/tone#politeness-and-use-of-please "Style and authorial tone  |  Google Developer Documentation Style Guide  |  Google Developers").
 
@@ -6,7 +6,7 @@ See [Style and authorial tone  |  Google Developer Documentation Style Guide �
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-tone
+    npm install @textlint-rule/textlint-rule-google-tone
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-tone": true
+        "@textlint-rule/google-tone": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-tone README.md
+textlint --rule @textlint-rule/google-tone README.md
 ```
 
 

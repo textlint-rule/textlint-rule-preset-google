@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-contractions",
+  "name": "@textlint-rule/textlint-rule-google-contractions",
   "version": "1.0.0",
   "description": "https://developers.google.com/style/contractions",
   "main": "lib/textlint-rule-google-contractions.js",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-contractions/",
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
   },
   "devDependencies": {
     "prettier": "^1.7.4",

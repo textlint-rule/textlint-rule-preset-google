@@ -1,6 +1,6 @@
 // MIT © 2017 azu
 "use strict";
-import { paragraphReporter } from "textlint-report-helper-for-google-preset";
+import { paragraphReporter } from "@textlint-rule/textlint-report-helper-for-google-preset";
 
 const report = context => {
     const dictionaries = [

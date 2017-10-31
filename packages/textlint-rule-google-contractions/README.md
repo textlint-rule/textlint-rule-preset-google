@@ -1,4 +1,4 @@
-# textlint-rule-google-contractions
+# @textlint-rule/textlint-rule-google-contractions
 
 For more information, see [Writing for a global audience  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/translation "Writing for a global audience  |  Google Developer Documentation Style Guide  |  Google Developers").
 
@@ -6,7 +6,7 @@ For more information, see [Writing for a global audience  |  Google Developer 
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-contractions
+    npm install @textlint-rule/textlint-rule-google-contractions
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-contractions": true
+        "@textlint-rule/google-contractions": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-contractions README.md
+textlint --rule @textlint-rule/google-contractions README.md
 ```
 
 

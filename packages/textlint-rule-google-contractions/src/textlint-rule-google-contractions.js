@@ -1,6 +1,10 @@
 // MIT © 2017 azu
 "use strict";
-import { paragraphReporter, getPos, getPosFromSingleWord } from "textlint-report-helper-for-google-preset";
+import {
+    paragraphReporter,
+    getPos,
+    getPosFromSingleWord
+} from "@textlint-rule/textlint-report-helper-for-google-preset";
 
 // https://developers.google.com/style/clause-order
 export const nounVerbMessage =

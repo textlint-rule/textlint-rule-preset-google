@@ -1,4 +1,4 @@
-# textlint-rule-google-hyphens
+# @textlint-rule/textlint-rule-google-hyphens
 
 Reference: [Hyphens  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/hyphens "Hyphens  |  Google Developer Documentation Style Guide  |  Google Developers")
 
@@ -6,7 +6,7 @@ Reference: [Hyphens  |  Google Developer Documentation Style Guide  |  Googl
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-google-hyphens
+    npm install @textlint-rule/textlint-rule-google-hyphens
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "google-hyphens": true
+        "@textlint-rule/google-hyphens": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule google-hyphens README.md
+textlint --rule @textlint-rule/google-hyphens README.md
 ```
 
 

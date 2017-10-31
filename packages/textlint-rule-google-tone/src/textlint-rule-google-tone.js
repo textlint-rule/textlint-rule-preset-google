@@ -1,6 +1,6 @@
 // MIT © 2017 azu
 "use strict";
-import { paragraphReporter, getPos } from "textlint-report-helper-for-google-preset";
+import { paragraphReporter, getPos } from "@textlint-rule/textlint-report-helper-for-google-preset";
 
 const report = context => {
     // Politeness and use of "please"

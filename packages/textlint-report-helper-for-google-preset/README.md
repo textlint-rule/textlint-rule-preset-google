@@ -1,4 +1,4 @@
-# textlint-report-helper-for-google-preset
+# @textlint-rule/textlint-report-helper-for-google-preset
 
 Report Helper function for google-preset.
 
@@ -6,7 +6,7 @@ Report Helper function for google-preset.
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-report-helper-for-google-preset
+    npm install @textlint-rule/textlint-report-helper-for-google-preset
 
 ## Usage
 

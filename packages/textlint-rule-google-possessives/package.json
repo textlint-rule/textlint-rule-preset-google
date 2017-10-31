@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-possessives",
+  "name": "@textlint-rule/textlint-rule-google-possessives",
   "version": "1.0.0",
   "description": "Reference https://developers.google.com/style/possessives",
   "main": "lib/textlint-rule-google-possessives.js",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-possessives/",
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
   },
   "devDependencies": {
     "prettier": "^1.7.4",
