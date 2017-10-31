@@ -78,6 +78,8 @@ textlint --rule preset-google-developer README.md
     - [x] Noun+verb contractions
     - [x] Don't use double contractions
 - [Cross-references](https://developers.google.com/style/cross-references)
+- [Plurals in parentheses](https://developers.google.com/style/plurals-parentheses)
+    - [ ] Don't put optional plurals in parentheses.
 - [Prepositions](https://developers.google.com/style/prepositions)
 - [Present tense](https://developers.google.com/style/tense)
     - [ ] will
