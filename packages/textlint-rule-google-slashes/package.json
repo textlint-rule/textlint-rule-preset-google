@@ -41,7 +41,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "textlint-report-helper-for-google-preset": "^1.0.0",
-    "textlint-rule-helper": "^2.0.0"
+    "textlint-rule-helper": "^2.0.0",
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
   }
 }

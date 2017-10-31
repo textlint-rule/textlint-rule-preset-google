@@ -1,6 +1,6 @@
 // MIT © 2017 azu
 "use strict";
-import { shouldIgnoreNodeOfStrNode, strReporter } from "textlint-report-helper-for-google-preset";
+import { shouldIgnoreNodeOfStrNode, strReporter } from "@textlint-rule/textlint-report-helper-for-google-preset";
 import { classifyArticle } from "english-article-classifier";
 
 const DocumentURL = "https://developers.google.com/style/articles";
