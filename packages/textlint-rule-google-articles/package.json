@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-articles",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Reference: https://developers.google.com/style/articles",
   "main": "lib/textlint-rule-google-articles.js",
   "scripts": {
@@ -41,8 +41,8 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "english-article-classifier": "^1.0.1",
-    "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.1",
+    "english-article-classifier": "^1.0.1"
   },
   "publishConfig": {
     "access": "public"

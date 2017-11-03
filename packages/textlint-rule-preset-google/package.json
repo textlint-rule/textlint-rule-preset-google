@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-preset-google",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Google Developer Documentation Style Guide for textlint.",
   "main": "lib/textlint-rule-preset-google.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-preset-google/",
   "dependencies": {
-    "@textlint-rule/textlint-rule-google-abbreviations": "^1.0.0"
+    "@textlint-rule/textlint-rule-google-abbreviations": "^0.0.1"
   },
   "devDependencies": {
     "prettier": "^1.7.4",
