@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-preset-google",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Google Developer Documentation Style Guide for textlint.",
   "main": "lib/textlint-rule-preset-google.js",
   "scripts": {
