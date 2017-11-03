@@ -1,12 +1,12 @@
 # textlint-rule-preset-google-developer [![Build Status](https://travis-ci.org/textlint-rule/textlint-rule-preset-google.svg?branch=master)](https://travis-ci.org/textlint-rule/textlint-rule-preset-google)
 
-Google Developer Documentation Style Guide 
+[Google Developer Documentation Style Guide](https://developers.google.com/style/) for [textlint](https://github.com/textlint/textlint "textlint").
 
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-preset-google-developer
+    npm install @textlint-rule/textlint-rule-preset-google-developer
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "preset-google-developer": true
+        "@textlint-rule/preset-google-developer": true
     }
 }
 ```
