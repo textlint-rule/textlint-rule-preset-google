@@ -52,7 +52,7 @@ const createRuleAndConfig = packageNames => {
         null,
         4
     )};
-`;
+`.replace(/"require\(\\"(.*)\\"\)"/g, `require("$1")`);
 };
 
 const monorepoVersion = require("../lerna.json").version;
