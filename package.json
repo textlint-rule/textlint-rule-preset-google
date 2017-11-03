@@ -10,7 +10,7 @@
     "publish": "lerna publish",
     "test": "lerna run test",
     "build": "lerna run build",
-    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css,json}'",
     "precommit": "lint-staged",
     "postcommit": "git reset"
   },

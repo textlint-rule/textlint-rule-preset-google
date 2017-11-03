@@ -13,7 +13,8 @@
     },
     {
         "word": "actionable",
-        "message": "Avoid unless it's the clearest and simplest phrasing for your audience. If\nnot, then consider options such as leaving it out or replacing it with a phrase\nlike \"useful\" or \"that you can act on.\" Don't use it in the legal sense without\nconsulting a lawyer."
+        "message":
+            "Avoid unless it's the clearest and simplest phrasing for your audience. If\nnot, then consider options such as leaving it out or replacing it with a phrase\nlike \"useful\" or \"that you can act on.\" Don't use it in the legal sense without\nconsulting a lawyer."
     },
     {
         "word": "action bar",
@@ -25,7 +26,8 @@
     },
     {
         "word": "& (ampersand)",
-        "message": "In headings or text, don't use instead of \"and\"; however, it's OK to use\nin tables and UIs. And of course it's fine to use & for technical\npurposes in code."
+        "message":
+            "In headings or text, don't use instead of \"and\"; however, it's OK to use\nin tables and UIs. And of course it's fine to use & for technical\npurposes in code."
     },
     {
         "word": "and so on",
@@ -45,7 +47,8 @@
     },
     {
         "word": "cell phone",
-        "message": "Don't use. Instead, use \"mobile\" or \"mobile phone\" or (if you're talking\nabout more than just phones) \"mobile device.\" Using \"phone\" (without \"mobile\")\nis fine when the context is clear."
+        "message":
+            "Don't use. Instead, use \"mobile\" or \"mobile phone\" or (if you're talking\nabout more than just phones) \"mobile device.\" Using \"phone\" (without \"mobile\")\nis fine when the context is clear."
     },
     {
         "word": "cellular data",
@@ -85,7 +88,8 @@
     },
     {
         "word": "e.g.",
-        "message": "Don't use. Instead, use phrases like \"for example\" or \"for instance.\" Too\nmany people mix up \"e.g.\" and \"i.e.\""
+        "message":
+            "Don't use. Instead, use phrases like \"for example\" or \"for instance.\" Too\nmany people mix up \"e.g.\" and \"i.e.\""
     },
     {
         "word": "enable, enabled",
@@ -93,7 +97,8 @@
     },
     {
         "word": "gender-neutral he, him, or his (or she or\nher)",
-        "message": "Don't use. Instead, use the singular \"they\" (see Jane Austen and other\nfamous authors violate what everyone learned in their English class). If\nyou can't stand that, then use \"he or she,\" or rewrite to avoid singular\ngendered pronouns. For example, using plurals can often help. (For more\nsuggestions, if you have access to the Chicago Manual of Style,\n16th edition, then see section 5.225, \"Nine techniques for achieving gender\nneutrality.\") Don't use \"he/she\" or \"(s)he\" or other such punctuational\napproaches."
+        "message":
+            "Don't use. Instead, use the singular \"they\" (see Jane Austen and other\nfamous authors violate what everyone learned in their English class). If\nyou can't stand that, then use \"he or she,\" or rewrite to avoid singular\ngendered pronouns. For example, using plurals can often help. (For more\nsuggestions, if you have access to the Chicago Manual of Style,\n16th edition, then see section 5.225, \"Nine techniques for achieving gender\nneutrality.\") Don't use \"he/she\" or \"(s)he\" or other such punctuational\napproaches."
     },
     {
         "word": "Google, Googling",
@@ -117,7 +122,8 @@
     },
     {
         "word": "in order to",
-        "message": "If at all possible, don't use \"in order to\"; instead, use \"to.\" Very\noccasionally, \"in order to\" does clarify meaning or make something easier to\nread."
+        "message":
+            "If at all possible, don't use \"in order to\"; instead, use \"to.\" Very\noccasionally, \"in order to\" does clarify meaning or make something easier to\nread."
     },
     {
         "word": "kill",
@@ -145,7 +151,8 @@
     },
     {
         "word": "Representational State Transfer",
-        "message": "Don't use. To people unfamiliar with REST, this acronym expansion is\nmeaningless; better to just refer to it as REST and don't bother trying to\nexplain what it theoretically stands for."
+        "message":
+            "Don't use. To people unfamiliar with REST, this acronym expansion is\nmeaningless; better to just refer to it as REST and don't bother trying to\nexplain what it theoretically stands for."
     },
     {
         "word": "should",
@@ -169,7 +176,8 @@
     },
     {
         "word": "\"tap &\nhold\" or \"tap and hold\"",
-        "message": "Use \"touch & hold\" (not \"touch and hold\") instead. (Note the \"&\". It's OK\nto use in this case.)"
+        "message":
+            "Use \"touch & hold\" (not \"touch and hold\") instead. (Note the \"&\". It's OK\nto use in this case.)"
     },
     {
         "word": "terminate",
@@ -201,6 +209,7 @@
     },
     {
         "word": "zippy",
-        "message": "Don't use to refer to expander arrows,\nunless you're specifically referring to the Zippy\nwidget in Closure."
+        "message":
+            "Don't use to refer to expander arrows,\nunless you're specifically referring to the Zippy\nwidget in Closure."
     }
 ]
