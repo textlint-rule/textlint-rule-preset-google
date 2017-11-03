@@ -43,5 +43,8 @@
   "dependencies": {
     "english-article-classifier": "^1.0.1",
     "@textlint-rule/textlint-report-helper-for-google-preset": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
