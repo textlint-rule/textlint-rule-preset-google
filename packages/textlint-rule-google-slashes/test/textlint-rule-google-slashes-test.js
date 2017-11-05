@@ -12,7 +12,12 @@ tester.run("textlint-rule-google-slashes", rule, {
         "¾",
         "0.75",
         "75%",
-        "care of, with"
+        "care of, with",
+        // Allow to write URL and link
+        "This is https://github.com/almin/almin/tree/master/examples/todomvc",
+        "- https://github.com/almin/almin/tree/master/examples/todomvc\n",
+        '- [almin/examples/counter/test at master · almin/almin](https://github.com/almin/almin/tree/master/examples/counter/test "almin/examples/counter/test at master · almin/almin")',
+        '[almin/examples/counter/test at master · almin/almin](https://github.com/almin/almin/tree/master/examples/counter/test "almin/examples/counter/test at master · almin/almin")'
     ],
     invalid: [
         // Slashes with alternatives

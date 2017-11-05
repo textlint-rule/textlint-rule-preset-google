@@ -169,28 +169,31 @@ export const paragraphReporter = ({
             return;
         }
         matchTestReplaceReturn.results.forEach(result => {
-            const index = source.originalIndexFromIndex(result.index);
-            const endIndex = source.originalIndexFromIndex(result.index + result.match.length);
-            const range = [index, endIndex];
+            // relative index
+            const indexFromNode = source.originalIndexFromIndex(result.index);
+            const endIndexFromNode = source.originalIndexFromIndex(result.index + result.match.length);
+            const rangeFromNode = [indexFromNode, endIndexFromNode];
+            // absolute index
+            const absoluteRange = [node.range[0] + rangeFromNode[0], node.range[1] + rangeFromNode[1]];
             // if the error is ignored, don't report
-            if (ignoreNodeManager.isIgnoredRange(range)) {
+            if (ignoreNodeManager.isIgnoredRange(absoluteRange)) {
                 return;
             }
             if (!result.replace) {
                 report(
                     node,
                     new RuleError(result.message, {
-                        index
+                        index: indexFromNode
                     })
                 );
                 return;
             }
-            const beforeText = originalText.slice(index, endIndex);
+            const beforeText = originalText.slice(indexFromNode, endIndexFromNode);
             if (beforeText !== result.match) {
                 report(
                     node,
                     new RuleError(result.message, {
-                        index
+                        index: indexFromNode
                     })
                 );
                 return;
@@ -198,8 +201,8 @@ export const paragraphReporter = ({
             report(
                 node,
                 new RuleError(result.message, {
-                    index,
-                    fix: fixer.replaceTextRange(range, result.replace)
+                    index: indexFromNode,
+                    fix: fixer.replaceTextRange(rangeFromNode, result.replace)
                 })
             );
         });
