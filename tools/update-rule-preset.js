@@ -40,7 +40,7 @@ const createRuleAndConfig = packageNames => {
     const rules = {};
     const rulesConfig = {};
     packageNames.forEach(packageName => {
-        const shortName = packageName.replace("@textlint-rule/textlint-rule-", "");
+        const shortName = packageName.replace("@textlint-rule/textlint-rule-google-", "");
         rules[shortName] = `require("${packageName}")`;
         rulesConfig[shortName] = true;
     });
