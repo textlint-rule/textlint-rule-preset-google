@@ -49,7 +49,7 @@ const report = context => {
         {
             word: "application",
             replace: () => "app",
-            message: 'Don\'t use. Instead, use "app."'
+            message: 'Don\'t use. Instead, use "app".'
         },
         {
             word: "authN",
