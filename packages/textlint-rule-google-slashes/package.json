@@ -42,7 +42,6 @@
   },
   "dependencies": {
     "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.2",
-    "is-url": "^1.2.2",
     "textlint-rule-helper": "^2.0.0"
   },
   "publishConfig": {

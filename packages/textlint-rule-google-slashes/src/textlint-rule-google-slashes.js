@@ -2,8 +2,6 @@
 "use strict";
 import { paragraphReporter } from "@textlint-rule/textlint-report-helper-for-google-preset";
 
-const isUrl = require("is-url");
-const DocumentURL = "https://developers.google.com/style/slashes";
 const REPLACE_ABBR_DICT = {
     "c/o": "care of",
     "w/": "with",
