@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-hyphens",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Reference: https://developers.google.com/style/hyphens",
   "main": "lib/textlint-rule-google-hyphens.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.2"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.4"
   },
   "publishConfig": {
     "access": "public"
