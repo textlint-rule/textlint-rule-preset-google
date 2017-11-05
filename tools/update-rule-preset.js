@@ -44,7 +44,8 @@ const createRuleAndConfig = packageNames => {
         rules[shortName] = `require("${packageName}")`;
         rulesConfig[shortName] = true;
     });
-    return `module.exports = ${JSON.stringify(
+    return `// prettier-ignore
+module.exports = ${JSON.stringify(
         {
             rules,
             rulesConfig
