@@ -40,11 +40,12 @@ const createRuleAndConfig = packageNames => {
     const rules = {};
     const rulesConfig = {};
     packageNames.forEach(packageName => {
-        const shortName = packageName.replace("@textlint-rule/textlint-rule-", "");
+        const shortName = packageName.replace("@textlint-rule/textlint-rule-google-", "");
         rules[shortName] = `require("${packageName}")`;
         rulesConfig[shortName] = true;
     });
-    return `module.exports = ${JSON.stringify(
+    return `// prettier-ignore
+module.exports = ${JSON.stringify(
         {
             rules,
             rulesConfig
