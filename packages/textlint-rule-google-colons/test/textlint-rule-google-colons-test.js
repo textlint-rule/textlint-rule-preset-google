@@ -28,6 +28,10 @@ https://developers.google.com/style/colons#introductory-phrase-preceding-colon
             ]
         },
         {
+            text: "- The fields are:",
+            errors: [{}]
+        },
+        {
             text: "This is:",
             errors: [
                 {
