@@ -10,7 +10,9 @@ tester.run("textlint-rule-google-dashes", rule, {
         "Number of range like 2012-2016 is ok.",
         "two-day total",
         "8-20 files",
-        "64-bit"
+        "64-bit",
+        // allow to write in link
+        '`- [uml - What\'s is the difference between include and extend in use case diagram? - Stack Overflow](https://stackoverflow.com/questions/1696927/whats-is-the-difference-between-include-and-extend-in-use-case-diagram "uml - What&#39;s is the difference between include and extend in use case diagram? - Stack Overflow")'
     ],
     invalid: [
         // hyphen to dash

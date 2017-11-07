@@ -1,12 +1,8 @@
 // MIT © 2017 azu
 "use strict";
-import {
-    paragraphReporter,
-    strReporter,
-    getPos,
-    PosType
-} from "@textlint-rule/textlint-report-helper-for-google-preset";
+import { strReporter, getPos, PosType } from "@textlint-rule/textlint-report-helper-for-google-preset";
 
+const { RuleHelper } = require("textlint-rule-helper");
 const DocumentURL = "https://developers.google.com/style/dashes";
 const report = context => {
     const { Syntax, RuleError, getSource, fixer, report } = context;
@@ -58,8 +54,12 @@ const report = context => {
         }
     ];
 
+    const helper = new RuleHelper(context);
     return {
         [Syntax.Str](node) {
+            if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote, Syntax.Emphasis])) {
+                return;
+            }
             // use colon instead of dash or hyphen can't work on Paragraph
             // Because, replace `code` with wrong range...
             // Temporary, we use strReporter
