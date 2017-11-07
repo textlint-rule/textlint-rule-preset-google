@@ -101,9 +101,10 @@ textlint --rule preset-google-developer README.md
     - :heavy_check_mark: `textlint-rule-google-possessives`
     - [x] incorrect possessives
 - [Colons](https://developers.google.com/style/colons)
-    - [ ] Introductory phrase preceding colon
-    - [ ] Bold text preceding colon
-    - [ ] In general, the first word in the text that follows a colon should be in lowercase.
+    - :heavy_check_mark: `textlint-rule-google-colons`
+    - [x] Introductory phrase preceding colon
+    - [x] Bold text preceding colon
+    - [x] In general, the first word in the text that follows a colon should be in lowercase.
 - [Commas](https://developers.google.com/style/commas)
 - [Dashes](https://developers.google.com/style/dashes)
     - :heavy_check_mark: `textlint-rule-google-dashes`

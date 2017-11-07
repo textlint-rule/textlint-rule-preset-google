@@ -1,6 +1,6 @@
 # @textlint-rule/textlint-rule-google-colons
 
-Reference: https://developers.google.com/style/colons
+Reference: [Colons  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/colons "Colons  |  Google Developer Documentation Style Guide  |  Google Developers").
 
 ## Install
 
