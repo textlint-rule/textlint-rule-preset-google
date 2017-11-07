@@ -1,6 +1,6 @@
 # @textlint-rule/textlint-rule-google-plurals-parentheses
 
-Reference: https://developers.google.com/style/plurals-parentheses
+Reference: [Plurals in parentheses  |  Google Developer Documentation Style Guide  |  Google Developers](https://developers.google.com/style/plurals-parentheses "Plurals in parentheses  |  Google Developer Documentation Style Guide  |  Google Developers").
 
 ## Install
 
