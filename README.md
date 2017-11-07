@@ -92,6 +92,7 @@ textlint --rule preset-google-developer README.md
     - Use "you" rather than "we."
 - [Spelling](https://developers.google.com/style/spelling)
 - [Verb forms in reference documentation](https://developers.google.com/style/reference-verbs)
+    - [ ] Use "does" rather than "do" in a specification
 - [Word list](https://developers.google.com/style/word-list)
     - :heavy_check_mark: `textlint-rule-google-word-list`
     - [x] Word list
