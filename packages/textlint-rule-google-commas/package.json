@@ -1,0 +1,46 @@
+{
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "name": "@textlint-rule/textlint-rule-google-commas",
+  "version": "1.0.0",
+  "description": "Reference: https://developers.google.com/style/commas",
+  "main": "lib/textlint-rule-google-commas.js",
+  "scripts": {
+    "test": "textlint-scripts test",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,css}'",
+    "prepublish": "npm run --if-present build",
+    "build": "textlint-scripts build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/textlint-rule/textlint-rule-preset-google.git"
+  },
+  "bugs": {
+    "url": "https://github.com/textlint-rule/textlint-rule-preset-google/issues"
+  },
+  "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-commas/",
+  "dependencies": {
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.8.1",
+    "textlint-scripts": "^1.4.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "keywords": [
+    "textlintrule"
+  ]
+}
