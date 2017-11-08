@@ -42,5 +42,8 @@
   },
   "keywords": [
     "textlintrule"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

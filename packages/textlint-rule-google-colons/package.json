@@ -42,5 +42,8 @@
   },
   "dependencies": {
     "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
