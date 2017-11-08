@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-possessives",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Reference https://developers.google.com/style/possessives",
   "main": "lib/textlint-rule-google-possessives.js",
   "scripts": {

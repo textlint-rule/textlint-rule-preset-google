@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-word-list",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "See https://developers.google.com/style/word-list",
   "main": "lib/textlint-rule-google-word-list.js",
   "dependencies": {

@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-commas",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Reference: https://developers.google.com/style/commas",
   "main": "lib/textlint-rule-google-commas.js",
   "scripts": {

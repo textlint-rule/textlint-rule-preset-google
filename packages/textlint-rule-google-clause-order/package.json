@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-clause-order",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "https://developers.google.com/style/clause-order",
   "main": "lib/textlint-rule-google-clause-order.js",
   "scripts": {
