@@ -106,6 +106,11 @@ textlint --rule preset-google-developer README.md
     - [x] Bold text preceding colon
     - [x] In general, the first word in the text that follows a colon should be in lowercase.
 - [Commas](https://developers.google.com/style/commas)
+    - [x] Serial commas
+    - [ ] Commas after introductory words and phrases
+    - [ ] Commas separating two independent clauses
+    - [ ] Commas separating independent from dependent clauses
+    - [x] Setting off other kinds of clauses
 - [Dashes](https://developers.google.com/style/dashes)
     - :heavy_check_mark: `textlint-rule-google-dashes`
     - [x] use `—` insteadof `-`
