@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-capitalization",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Reference: https://developers.google.com/style/capitalization",
   "main": "lib/textlint-rule-google-capitalization.js",
   "dependencies": {

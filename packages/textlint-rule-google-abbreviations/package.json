@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-abbreviations",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Reference: https://developers.google.com/style/abbreviations",
   "main": "lib/textlint-rule-google-abbreviations.js",
   "scripts": {

@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-articles",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Reference: https://developers.google.com/style/articles",
   "main": "lib/textlint-rule-google-articles.js",
   "scripts": {
