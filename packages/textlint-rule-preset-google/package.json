@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-preset-google",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Google Developer Documentation Style Guide for textlint.",
   "main": "lib/textlint-rule-preset-google.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "@textlint-rule/textlint-rule-google-capitalization": "^0.0.6",
     "@textlint-rule/textlint-rule-google-clause-order": "^0.0.6",
     "@textlint-rule/textlint-rule-google-colons": "^0.0.6",
-    "@textlint-rule/textlint-rule-google-commas": "^0.0.6",
+    "@textlint-rule/textlint-rule-google-commas": "^0.1.0",
     "@textlint-rule/textlint-rule-google-contractions": "^0.0.6",
     "@textlint-rule/textlint-rule-google-dashes": "^0.0.6",
     "@textlint-rule/textlint-rule-google-ellipses": "^0.0.6",
