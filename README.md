@@ -156,7 +156,8 @@ textlint --rule preset-google-developer README.md
     - [x] Leave only one space between sentences
 - [Tables](https://developers.google.com/style/tables)
 - [Units of measurement](https://developers.google.com/style/units-of-measure)
-    - [ ] Formatting units of measurement
+    - :heavy_check_mark: `textlint-rule-google-units-of-measure`
+    - [x] Formatting units of measurement
 - Computer interfaces
 - [API reference code comments](https://developers.google.com/style/api-reference-comments)
 - [Code in text](https://developers.google.com/style/code-in-text)
