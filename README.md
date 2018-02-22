@@ -128,6 +128,15 @@ textlint --rule preset-google-developer README.md
     - [x] Don't add words such as -from- or -between-.
 - [Parentheses](https://developers.google.com/style/parentheses)
 - [Periods](https://developers.google.com/style/periods)
+    - [ ] Periods with lists
+    - [ ] Periods with URLs
+        - Avoid put a space URLs and period
+    - [ ] Periods with quotation marks
+    - [ ] Periods with parentheses
+    - [ ] Periods with headings
+    - [ ] Periods with numbers
+    - [ ] Periods with captions
+    - [ ] Periods with abbreviations
 - [Pluralizing a single letter](https://developers.google.com/style/plural-single-letter)
 - [Quotation marks](https://developers.google.com/style/quotation-marks)
     - :heavy_check_mark: `textlint-rule-google-quotation-marks`
