@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-commas",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reference: https://developers.google.com/style/commas",
   "main": "lib/textlint-rule-google-commas.js",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-commas/",
   "dependencies": {
-    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.0.6"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.1"
   },
   "devDependencies": {
     "prettier": "^1.8.1",

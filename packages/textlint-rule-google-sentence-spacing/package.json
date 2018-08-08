@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-sentence-spacing",
-  "version": "0.0.6",
+  "version": "0.1.1",
   "description": "Reference: https://developers.google.com/style/sentence-spacing",
   "main": "lib/textlint-rule-google-sentence-spacing.js",
   "scripts": {
