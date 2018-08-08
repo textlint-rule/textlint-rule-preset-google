@@ -10,7 +10,7 @@
     "lib/",
     "src/"
   ],
-  "name": "textlint-rule-google-units-of-measure",
+  "name": "@textlint-rule/textlint-rule-google-units-of-measure",
   "version": "0.1.1",
   "description": "Reference https://developers.google.com/style/units-of-measure",
   "main": "lib/textlint-rule-google-units-of-measure.js",
