@@ -9,15 +9,18 @@ const defaultOptions = {
 const createReporter = capitalizationReport => {
     return (context, options = defaultOptions) => {
         const { report } = context;
-        return capitalizationReport(
-            Object.assign(context, {
-                report: (node, error) => {
-                    error.message += "\n" + DocumentURL;
-                    report(node, error);
-                }
-            }),
-            options
-        );
+        const overlayContext = Object.create(context);
+        // pass custom context to textlint-rule-en-capitalization
+        Object.defineProperty(overlayContext, "report", {
+            value: (node, error) => {
+                error.message += "\n" + DocumentURL;
+                report(node, error);
+            },
+            enumerable: true,
+            configurable: true,
+            writable: true
+        });
+        return capitalizationReport(overlayContext, options);
     };
 };
 module.exports = {

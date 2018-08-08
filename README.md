@@ -198,9 +198,15 @@ See [Releases page](https://github.com/textlint-rule/textlint-rule-preset-google
 
 ## Running tests
 
-Install devDependencies and Run `npm test`:
+This monorepo use [Yarn](https://yarnpkg.com/). 
 
-    npm i -d && npm test
+Install dependencies and Run `npm test`:
+
+```
+yarn install
+yarn bootstrap
+yarn test
+```
 
 ## Contributing
 

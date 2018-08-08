@@ -19,7 +19,7 @@ tester.run("textlint-rule-google-capitalization", rule, {
                 {
                     index: 0,
                     message:
-                        "Heading: Follow the standard capitalization rules for American English.\n" +
+                        "Paragraph: Follow the standard capitalization rules for American English.\n" +
                         "See https://owl.english.purdue.edu/owl/resource/592/01/\n" +
                         "https://developers.google.com/style/capitalization"
                 }

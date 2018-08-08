@@ -13,14 +13,16 @@ const defaultOptions = {
 };
 const linter = (context, options = defaultOptions) => {
     const { report } = context;
-    return noExclamationQuestionMark(
-        Object.assign(context, {
-            report: (node, error) => {
-                error.message += "\nhttps://developers.google.com/style/exclamation-points";
-                report(node, error);
-            }
-        }),
-        options
-    );
+    const overlayContext = Object.create(context);
+    Object.defineProperty(overlayContext, "report", {
+        value: (node, error) => {
+            error.message += "\nhttps://developers.google.com/style/exclamation-points";
+            report(node, error);
+        },
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    return noExclamationQuestionMark(overlayContext, options);
 };
 module.exports = linter;
