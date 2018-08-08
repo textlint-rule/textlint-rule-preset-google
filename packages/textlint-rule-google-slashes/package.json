@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-slashes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Reference: https://developers.google.com/style/slashes",
   "main": "lib/textlint-rule-google-slashes.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.1",
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.2",
     "textlint-rule-helper": "^2.0.0"
   },
   "publishConfig": {

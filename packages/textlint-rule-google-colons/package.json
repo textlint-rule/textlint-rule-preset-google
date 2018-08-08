@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-colons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Reference: https://developers.google.com/style/colons",
   "main": "lib/textlint-rule-google-colons.js",
   "scripts": {
@@ -41,7 +41,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.1"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.2"
   },
   "publishConfig": {
     "access": "public"

@@ -11,7 +11,7 @@
     "src/"
   ],
   "name": "@textlint-rule/textlint-rule-google-units-of-measure",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Reference https://developers.google.com/style/units-of-measure",
   "main": "lib/textlint-rule-google-units-of-measure.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/textlint-rule/textlint-rule-preset-google/tree/master/packages/textlint-rule-google-units-of-measure/",
   "dependencies": {
-    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.1"
+    "@textlint-rule/textlint-report-helper-for-google-preset": "^0.1.2"
   },
   "devDependencies": {
     "prettier": "^1.8.2",
