@@ -11,7 +11,7 @@
     ]
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap && yarn run build",
     "publish": "lerna publish",
     "test": "lerna run test",
     "build": "lerna run build",
