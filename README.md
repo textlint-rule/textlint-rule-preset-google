@@ -1,4 +1,4 @@
-# textlint-rule-preset-google-developer [![Build Status](https://travis-ci.org/textlint-rule/textlint-rule-preset-google.svg?branch=master)](https://travis-ci.org/textlint-rule/textlint-rule-preset-google)
+# textlint-rule-preset-google [![Build Status](https://travis-ci.org/textlint-rule/textlint-rule-preset-google.svg?branch=master)](https://travis-ci.org/textlint-rule/textlint-rule-preset-google)
 
 [Google Developer Documentation Style Guide](https://developers.google.com/style/) for [textlint](https://github.com/textlint/textlint "textlint").
 
@@ -6,7 +6,7 @@
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install @textlint-rule/textlint-rule-preset-google-developer
+    npm install @textlint-rule/textlint-rule-preset-google
 
 ## Usage
 
@@ -15,7 +15,7 @@ Via `.textlintrc`(Recommended)
 ```json
 {
     "rules": {
-        "@textlint-rule/preset-google-developer": true
+        "@textlint-rule/preset-google": true
     }
 }
 ```
@@ -23,7 +23,7 @@ Via `.textlintrc`(Recommended)
 Via CLI
 
 ```
-textlint --rule preset-google-developer README.md
+textlint --rule preset-google README.md
 ```
 
 ## Rules
@@ -124,7 +124,7 @@ textlint --rule preset-google-developer README.md
     - [x] Don't use `!` and `?`
 - [Hyphens](https://developers.google.com/style/hyphens)
     - :heavy_check_mark: `textlint-rule-google-hyphens`
-    - [x] Don't hyphenate adverbs ending in "ly" 
+    - [x] Don't hyphenate adverbs ending in "ly"
     - [x] Don't add words such as -from- or -between-.
 - [Parentheses](https://developers.google.com/style/parentheses)
 - [Periods](https://developers.google.com/style/periods)
@@ -194,7 +194,7 @@ textlint --rule preset-google-developer README.md
 
 ## Changelog
 
-See [Releases page](https://github.com/textlint-rule/textlint-rule-preset-google-developer/releases).
+See [Releases page](https://github.com/textlint-rule/textlint-rule-preset-google/releases).
 
 ## Running tests
 
@@ -204,7 +204,7 @@ Install devDependencies and Run `npm test`:
 
 ## Contributing
 
-For bugs and feature requests, [please create an issue](https://github.com/textlint-rule/textlint-rule-preset-google-developer/issues).
+For bugs and feature requests, [please create an issue](https://github.com/textlint-rule/textlint-rule-preset-google/issues).
 
 Pull requests and stars are always welcome.
 
