@@ -271,15 +271,16 @@ const report = (context, options = {}) => {
             message:
                 "Don't use to refer to expander arrows,\nunless you're specifically referring to the Zippy\nwidget in Closure."
         }
-    ].map(preDict => {
-        return {
-            pattern: typeof preDict.word === "string" ? new RegExp("\\b" + preDict.word + "\\b") : preDict.word,
-            test: preDict.test ? preDict.test : undefined,
-            replace: preDict.replace ? preDict.replace : undefined,
-            message: () => preDict.message
-        };
-    })
-    .filter(({ pattern }) => !allowWords.some(word => pattern.test(word)));
+    ]
+        .map(preDict => {
+            return {
+                pattern: typeof preDict.word === "string" ? new RegExp("\\b" + preDict.word + "\\b") : preDict.word,
+                test: preDict.test ? preDict.test : undefined,
+                replace: preDict.replace ? preDict.replace : undefined,
+                message: () => preDict.message
+            };
+        })
+        .filter(({ pattern }) => !allowWords.some(word => pattern.test(word)));
 
     const { Syntax, RuleError, getSource, fixer, report } = context;
     return {

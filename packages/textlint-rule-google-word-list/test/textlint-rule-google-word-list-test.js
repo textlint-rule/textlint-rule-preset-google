@@ -197,7 +197,7 @@ tester.run("textlint-rule-google-word-list", rule, {
         // with option: allowList
         {
             text: "This is an application.",
-            options: { allowWords: ['application'] }
+            options: { allowWords: ["application"] }
         }
     ],
     invalid: [
@@ -227,16 +227,18 @@ tester.run("textlint-rule-google-word-list", rule, {
         // with option: allowList
         {
             text: "This is an application.",
-            options: { allowWords: []},
+            options: { allowWords: [] },
             output: "This is an app.",
             errors: [{}]
         },
         {
             text: "This is an application.",
-            options: { allowWords: [
-                // 'application'
-                'app',
-            ]},
+            options: {
+                allowWords: [
+                    // 'application'
+                    "app"
+                ]
+            },
             output: "This is an app.",
             errors: [{}]
         }
