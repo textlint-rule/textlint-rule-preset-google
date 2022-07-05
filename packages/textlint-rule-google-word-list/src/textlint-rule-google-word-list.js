@@ -2,7 +2,9 @@
 "use strict";
 import { paragraphReporter, getPosFromSingleWord } from "@textlint-rule/textlint-report-helper-for-google-preset";
 
-const report = context => {
+const report = (context, options = {}) => {
+    const allowWords = Array.isArray(options.allowWords) ? options.allowWords : [];
+
     // Politeness and use of "please"
     // https://developers.google.com/style/tone#politeness-and-use-of-please
     const dictionaries = [
@@ -276,7 +278,8 @@ const report = context => {
             replace: preDict.replace ? preDict.replace : undefined,
             message: () => preDict.message
         };
-    });
+    })
+    .filter(({ pattern }) => !allowWords.some(word => pattern.test(word)));
 
     const { Syntax, RuleError, getSource, fixer, report } = context;
     return {
